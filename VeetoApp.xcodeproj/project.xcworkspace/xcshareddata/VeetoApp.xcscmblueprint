@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E7CBD8EB90DB0E7A494F1707DD62C60A2AB36468",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1D327AF05241D56369E9C77B42FA3188DF62F653" : 9223372036854775807,
+    "E7CBD8EB90DB0E7A494F1707DD62C60A2AB36468" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5245997E-0F01-40DA-BFCB-D2B3394EFDA8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1D327AF05241D56369E9C77B42FA3188DF62F653" : "",
+    "E7CBD8EB90DB0E7A494F1707DD62C60A2AB36468" : "VeetoApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VeetoApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VeetoApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Levi-Moreira\/Veeto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1D327AF05241D56369E9C77B42FA3188DF62F653"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Levi-Moreira\/Veeto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7CBD8EB90DB0E7A494F1707DD62C60A2AB36468"
+    }
+  ]
+}

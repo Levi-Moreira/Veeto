@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20A03451F0FF276004C21B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A03441F0FF276004C21B1 /* Constants.swift */; };
+		A20A03471F100517004C21B1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A03461F100517004C21B1 /* GameViewController.swift */; };
 		A24A11871F0ACD9500B73D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11861F0ACD9500B73D92 /* AppDelegate.swift */; };
 		A24A11891F0ACD9500B73D92 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11881F0ACD9500B73D92 /* MenuViewController.swift */; };
 		A24A118C1F0ACD9500B73D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A118A1F0ACD9500B73D92 /* Main.storyboard */; };
@@ -16,10 +18,9 @@
 		A24A119F1F0ACD9500B73D92 /* VeetoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A119E1F0ACD9500B73D92 /* VeetoAppTests.swift */; };
 		A24A11AA1F0ACD9500B73D92 /* VeetoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11A91F0ACD9500B73D92 /* VeetoAppUITests.swift */; };
 		A24A11B81F0AD19300B73D92 /* Green Gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */; };
-		A24A11BA1F0AD3D800B73D92 /* boss.png in Resources */ = {isa = PBXBuildFile; fileRef = A24A11B91F0AD3D800B73D92 /* boss.png */; };
-		A24A11BC1F0AD3E100B73D92 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = A24A11BB1F0AD3E100B73D92 /* group.png */; };
-		A24A11BE1F0AD44800B73D92 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A24A11BD1F0AD44800B73D92 /* settings.png */; };
-		A24A11C01F0AD51A00B73D92 /* settings (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A24A11BF1F0AD51A00B73D92 /* settings (1).png */; };
+		A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */; };
+		A2FC5F051F0D449B0050E629 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F041F0D449B0050E629 /* Card.swift */; };
+		A2FC5F071F0D45780050E629 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F061F0D45780050E629 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A20A03441F0FF276004C21B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A20A03461F100517004C21B1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A24A11831F0ACD9500B73D92 /* VeetoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeetoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24A11861F0ACD9500B73D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24A11881F0ACD9500B73D92 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -55,10 +58,9 @@
 		A24A11A91F0ACD9500B73D92 /* VeetoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeetoAppUITests.swift; sourceTree = "<group>"; };
 		A24A11AB1F0ACD9500B73D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green Gradient.jpg"; sourceTree = "<group>"; };
-		A24A11B91F0AD3D800B73D92 /* boss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boss.png; sourceTree = "<group>"; };
-		A24A11BB1F0AD3E100B73D92 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
-		A24A11BD1F0AD44800B73D92 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		A24A11BF1F0AD51A00B73D92 /* settings (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings (1).png"; sourceTree = "<group>"; };
+		A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleModeViewController.swift; sourceTree = "<group>"; };
+		A2FC5F041F0D449B0050E629 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A2FC5F061F0D45780050E629 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,18 +111,19 @@
 		A24A11851F0ACD9500B73D92 /* VeetoApp */ = {
 			isa = PBXGroup;
 			children = (
-				A24A11BF1F0AD51A00B73D92 /* settings (1).png */,
-				A24A11BD1F0AD44800B73D92 /* settings.png */,
-				A24A11BB1F0AD3E100B73D92 /* group.png */,
-				A24A11B91F0AD3D800B73D92 /* boss.png */,
-				A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */,
 				A24A11861F0ACD9500B73D92 /* AppDelegate.swift */,
 				A24A11881F0ACD9500B73D92 /* MenuViewController.swift */,
 				A24A118A1F0ACD9500B73D92 /* Main.storyboard */,
 				A24A11901F0ACD9500B73D92 /* Assets.xcassets */,
+				A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */,
 				A24A11921F0ACD9500B73D92 /* LaunchScreen.storyboard */,
 				A24A11951F0ACD9500B73D92 /* Info.plist */,
 				A24A118D1F0ACD9500B73D92 /* VeetoApp.xcdatamodeld */,
+				A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */,
+				A2FC5F041F0D449B0050E629 /* Card.swift */,
+				A2FC5F061F0D45780050E629 /* ResultViewController.swift */,
+				A20A03441F0FF276004C21B1 /* Constants.swift */,
+				A20A03461F100517004C21B1 /* GameViewController.swift */,
 			);
 			path = VeetoApp;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				TargetAttributes = {
 					A24A11821F0ACD9500B73D92 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6MNS953WHJ;
 						ProvisioningStyle = Automatic;
 					};
 					A24A11991F0ACD9500B73D92 = {
@@ -251,12 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24A11B81F0AD19300B73D92 /* Green Gradient.jpg in Resources */,
-				A24A11BE1F0AD44800B73D92 /* settings.png in Resources */,
-				A24A11BA1F0AD3D800B73D92 /* boss.png in Resources */,
 				A24A11941F0ACD9500B73D92 /* LaunchScreen.storyboard in Resources */,
-				A24A11BC1F0AD3E100B73D92 /* group.png in Resources */,
 				A24A11911F0ACD9500B73D92 /* Assets.xcassets in Resources */,
-				A24A11C01F0AD51A00B73D92 /* settings (1).png in Resources */,
 				A24A118C1F0ACD9500B73D92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +284,12 @@
 			files = (
 				A24A11891F0ACD9500B73D92 /* MenuViewController.swift in Sources */,
 				A24A118F1F0ACD9500B73D92 /* VeetoApp.xcdatamodeld in Sources */,
+				A2FC5F051F0D449B0050E629 /* Card.swift in Sources */,
 				A24A11871F0ACD9500B73D92 /* AppDelegate.swift in Sources */,
+				A20A03471F100517004C21B1 /* GameViewController.swift in Sources */,
+				A20A03451F0FF276004C21B1 /* Constants.swift in Sources */,
+				A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */,
+				A2FC5F071F0D45780050E629 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,11 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6MNS953WHJ;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "IFCE-2.VeetoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,11 +456,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6MNS953WHJ;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "IFCE-2.VeetoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -529,6 +540,7 @@
 				A24A11B01F0ACD9500B73D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A24A11B11F0ACD9500B73D92 /* Build configuration list for PBXNativeTarget "VeetoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +549,7 @@
 				A24A11B31F0ACD9500B73D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A24A11B41F0ACD9500B73D92 /* Build configuration list for PBXNativeTarget "VeetoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +558,7 @@
 				A24A11B61F0ACD9500B73D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

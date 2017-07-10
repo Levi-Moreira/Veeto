@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					A24A11821F0ACD9500B73D92 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6MNS953WHJ;
+						DevelopmentTeam = PTC33C9FM7;
 						ProvisioningStyle = Automatic;
 					};
 					A24A11991F0ACD9500B73D92 = {
@@ -441,11 +441,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6MNS953WHJ;
+				DEVELOPMENT_TEAM = PTC33C9FM7;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IFCE-2.VeetoApp";
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE2.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -456,11 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6MNS953WHJ;
+				DEVELOPMENT_TEAM = PTC33C9FM7;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IFCE-2.VeetoApp";
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE2.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

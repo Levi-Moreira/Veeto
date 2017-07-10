@@ -19,6 +19,8 @@ class SingleModeViewController: UIViewController {
     
     weak var resultViewController: ResultViewController?
 
+    weak var gameViewController : GameViewController?
+    
     var motionManager = CMMotionManager()
 	
 	var time = Timer()
@@ -31,6 +33,9 @@ class SingleModeViewController: UIViewController {
 		
         GameView.isHidden = false
 		ResultView.isHidden = true
+        
+        var didEnterPass = false
+        var didEnterCorrect = false
 		
 		startTimer()
 		
@@ -49,20 +54,26 @@ class SingleModeViewController: UIViewController {
 					
 
 					DispatchQueue.main.async {
-                    if(angle > 115){
+                    if(angle > 115 && !didEnterPass){
 							self?.GameView.isHidden = true
 							self?.ResultView.isHidden = false
 							self?.resultViewController?.didGameWin()
+                            self?.gameViewController?.didChangeCard()
+                            didEnterPass = true
                     }
                     
-                    if(angle < 60){
+                    if(angle < 60 && !didEnterCorrect){
 							self?.GameView.isHidden = true
 							self?.ResultView.isHidden = false
 							self?.resultViewController?.didGamePass()
+                            self?.gameViewController?.didChangeCard()
+                            didEnterCorrect = true
 						
                     }
 					
 						if(angle > 60 && angle < 115){
+                            didEnterPass = false
+                            didEnterCorrect = false
 							self?.GameView.isHidden = false
 							self?.ResultView.isHidden = true
 						}
@@ -91,6 +102,11 @@ class SingleModeViewController: UIViewController {
         if(segue.identifier == "resultSegue" ){
             resultViewController = segue.destination as! ResultViewController
         }
+        
+        if(segue.identifier == "gameSegue"){
+            gameViewController = segue.destination as! GameViewController
+        }
+        
     }
     
 

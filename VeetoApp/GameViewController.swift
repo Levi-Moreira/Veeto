@@ -9,16 +9,58 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    
+    @IBOutlet weak var mainWord: UILabel!
+    
+    @IBOutlet weak var firstWord: UILabel!
 
+    @IBOutlet weak var secondWord: UILabel!
+    
+    @IBOutlet weak var thirdWord: UILabel!
+    
+    @IBOutlet weak var fourthWord: UILabel!
+    
+    @IBOutlet weak var fifthWord: UILabel!
+    
+   
+    var words  = [Card]()
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        words.append(Card(mainCard: "Dance", firstCard: "Ballet", secondCard: "Salsa", thirdCard: "Tango", fourthCard: "Ballroom", fifthCard: "Movement"))
+        
+        words.append(Card(mainCard: "Flight", firstCard: "Bird", secondCard: "Cockpit", thirdCard: "Pilot", fourthCard: "Fly", fifthCard: "Air"))
+        
+        words.append(Card(mainCard: "Pen", firstCard: "Ink", secondCard: "Ballpoint", thirdCard: "Name", fourthCard: "Astronaut", fifthCard: "BIC"))
+        
+        words.append(Card(mainCard: "Letter", firstCard: "Writing", secondCard: "Stamp", thirdCard: "Mail", fourthCard: "Alphabet", fifthCard: "Email"))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func didChangeCard(){
+        
+        if(index == words.count){
+            index = 0
+        }
+        
+        mainWord.text = words[index].mainCard
+        firstWord.text = words[index].firstCard
+        secondWord.text = words[index].secondCard
+        thirdWord.text = words[index].thirdCard
+        fourthWord.text = words[index].fourthCard
+        fifthWord.text = words[index].fifthCard
+        
+        index = index + 1
+        
+        print("should change card")
     }
     
 

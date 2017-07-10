@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A20A03451F0FF276004C21B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A03441F0FF276004C21B1 /* Constants.swift */; };
 		A20A03471F100517004C21B1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A03461F100517004C21B1 /* GameViewController.swift */; };
+		A240B0701F13EE6E00592B04 /* FinalResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A240B06F1F13EE6E00592B04 /* FinalResultViewController.swift */; };
 		A24A11871F0ACD9500B73D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11861F0ACD9500B73D92 /* AppDelegate.swift */; };
 		A24A11891F0ACD9500B73D92 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11881F0ACD9500B73D92 /* MenuViewController.swift */; };
 		A24A118C1F0ACD9500B73D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24A118A1F0ACD9500B73D92 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		A20A03441F0FF276004C21B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A20A03461F100517004C21B1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A240B06F1F13EE6E00592B04 /* FinalResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalResultViewController.swift; sourceTree = "<group>"; };
 		A24A11831F0ACD9500B73D92 /* VeetoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeetoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24A11861F0ACD9500B73D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24A11881F0ACD9500B73D92 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A2FC5F061F0D45780050E629 /* ResultViewController.swift */,
 				A20A03441F0FF276004C21B1 /* Constants.swift */,
 				A20A03461F100517004C21B1 /* GameViewController.swift */,
+				A240B06F1F13EE6E00592B04 /* FinalResultViewController.swift */,
 			);
 			path = VeetoApp;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				A24A11871F0ACD9500B73D92 /* AppDelegate.swift in Sources */,
 				A20A03471F100517004C21B1 /* GameViewController.swift in Sources */,
 				A20A03451F0FF276004C21B1 /* Constants.swift in Sources */,
+				A240B0701F13EE6E00592B04 /* FinalResultViewController.swift in Sources */,
 				A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */,
 				A2FC5F071F0D45780050E629 /* ResultViewController.swift in Sources */,
 			);

@@ -117,6 +117,7 @@
                         <outlet property="GameView" destination="n57-gy-qbS" id="7tf-5p-LT8"/>
                         <outlet property="ResultView" destination="1bi-ub-cOu" id="Fya-Sx-dF2"/>
                         <outlet property="timer" destination="Te9-1Y-crH" id="Mk3-PP-RSB"/>
+                        <segue destination="7yd-Kn-jCf" kind="show" identifier="finalResultSegue" id="Enq-gn-ubv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm6-Dl-Zt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,7 +223,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dae-lK-EGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151.57421289355324" y="1924"/>
+            <point key="canvasLocation" x="-584" y="2087"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="nSP-ml-gR2">
+            <objects>
+                <viewController id="7yd-Kn-jCf" customClass="FinalResultViewController" customModule="VeetoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="56j-6V-lSj"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUk-2T-5up"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mb3-U3-EC3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBx-yb-65l">
+                                <rect key="frame" x="312" y="209" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="yIK-av-Kr3">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="IHc-XV-K7l">
+                            <connections>
+                                <action selector="didTapMenuButton:" destination="7yd-Kn-jCf" id="afi-5b-HQa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rar-L7-hrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="2071"/>
         </scene>
     </scenes>
     <resources>

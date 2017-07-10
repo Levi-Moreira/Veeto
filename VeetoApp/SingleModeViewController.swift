@@ -24,72 +24,27 @@ class SingleModeViewController: UIViewController {
     var motionManager = CMMotionManager()
 	
 	var time = Timer()
-	
-	var counter = 0
-    
+	var gameCounter = 5
+    var startGameCounter = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-        GameView.isHidden = false
-		ResultView.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        gameCounter = 5
+        startGameCounter = 3
         
-        var didEnterPass = false
-        var didEnterCorrect = false
-		
-		startTimer()
-		
-        if motionManager.isDeviceMotionAvailable == true {
-            
-            motionManager.deviceMotionUpdateInterval = 0.1;
-            
-            let queue = OperationQueue()
-            motionManager.startDeviceMotionUpdates(to: queue, withHandler: { [weak self] (motion, error) -> Void in
-                
-                // Get the attitude of the device
-                if let attitude = motion?.attitude {
-                    // Get the pitch (in radians) and convert to degrees.
-                    // Import Darwin to get M_PI in Swift
-                   let angle = abs(attitude.roll * 180.0/Double.pi)
-					
-
-					DispatchQueue.main.async {
-                    if(angle > 115 && !didEnterPass){
-							self?.GameView.isHidden = true
-							self?.ResultView.isHidden = false
-							self?.resultViewController?.didGameWin()
-                            self?.gameViewController?.didChangeCard()
-                            didEnterPass = true
-                    }
-                    
-                    if(angle < 60 && !didEnterCorrect){
-							self?.GameView.isHidden = true
-							self?.ResultView.isHidden = false
-							self?.resultViewController?.didGamePass()
-                            self?.gameViewController?.didChangeCard()
-                            didEnterCorrect = true
-						
-                    }
-					
-						if(angle > 60 && angle < 115){
-                            didEnterPass = false
-                            didEnterCorrect = false
-							self?.GameView.isHidden = false
-							self?.ResultView.isHidden = true
-						}
-					}
-					
-                }
-                
-            })
-            
-            print("Device motion started")
-        }
+        startTimer()
         
-        
-        resultViewController?.didGamePass()
-  
-        // Do any additional setup after loading the view.
+        resultViewController?.didGameWait(msg: "Prepare")
+        GameView.isHidden = true
+        ResultView.isHidden = false
+        timer.title = String(startGameCounter)+"s"
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        motionManager.stopDeviceMotionUpdates()
     }
 
     override func didReceiveMemoryWarning() {
@@ -109,6 +64,57 @@ class SingleModeViewController: UIViewController {
         
     }
     
+    func startGyro() {
+        var didEnterPass = false
+        var didEnterCorrect = false
+        
+        if motionManager.isDeviceMotionAvailable == true {
+            
+            motionManager.deviceMotionUpdateInterval = 0.1;
+            
+            let queue = OperationQueue()
+            motionManager.startDeviceMotionUpdates(to: queue, withHandler: { [weak self] (motion, error) -> Void in
+                
+                // Get the attitude of the device
+                if let attitude = motion?.attitude {
+                    // Get the pitch (in radians) and convert to degrees.
+                    // Import Darwin to get M_PI in Swift
+                    let angle = abs(attitude.roll * 180.0/Double.pi)
+                    
+                    
+                    DispatchQueue.main.async {
+                        if(angle > 115 && !didEnterPass){
+                            self?.GameView.isHidden = true
+                            self?.ResultView.isHidden = false
+                            self?.resultViewController?.didGameWin()
+                            self?.gameViewController?.didChangeCard()
+                            didEnterPass = true
+                        }
+                        
+                        if(angle < 60 && !didEnterCorrect){
+                            self?.GameView.isHidden = true
+                            self?.ResultView.isHidden = false
+                            self?.resultViewController?.didGamePass()
+                            self?.gameViewController?.didChangeCard()
+                            didEnterCorrect = true
+                            
+                        }
+                        
+                        if(angle > 60 && angle < 115){
+                            didEnterPass = false
+                            didEnterCorrect = false
+                            self?.GameView.isHidden = false
+                            self?.ResultView.isHidden = true
+                        }
+                    }
+                    
+                }
+                
+            })
+            
+            print("Device motion started")
+        }
+    }
 
 	func startTimer(){
 		let updateSelector : Selector = #selector(SingleModeViewController.updateTime)
@@ -116,9 +122,37 @@ class SingleModeViewController: UIViewController {
 	}
 	
 	func updateTime(){
-		counter = counter + 1
-		
-		timer.title = String(counter)+"s"
+        startGameCounter = startGameCounter - 1
+        
+        if (startGameCounter == 0) {
+            startGyro()
+        }
+        if (startGameCounter <= 0) {
+            gameCounter = gameCounter - 1
+            
+            if (gameCounter == 0) {
+                self.timer.title = String("Voltar")
+                self.time.invalidate()
+                self.performSegue(withIdentifier: "finalResultSegue", sender: nil)
+            }
+            else {
+                timer.title = String(gameCounter)+"s"
+            }
+        }
+        else {
+            switch startGameCounter {
+            case 2:
+                resultViewController?.didGameWait(msg: "Ready?")
+            case 1:
+                resultViewController?.didGameWait(msg: "Go!!!")
+            default:
+                return
+            }
+        
+            GameView.isHidden = true
+            ResultView.isHidden = false
+            timer.title = String(startGameCounter)+"s"
+        }
 	}
 
 }

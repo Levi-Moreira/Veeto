@@ -37,5 +37,10 @@ class ResultViewController: UIViewController {
         statusLabel.text = "Correct"
 
     }
+    
+    func didGameWait(msg: String) {
+        mainView.backgroundColor = .blue
+        statusLabel.text = msg
+    }
 
 }

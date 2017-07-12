@@ -8,11 +8,17 @@
 
 import UIKit
 
-class FinalResultViewController: UIViewController {
 
+class FinalResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
         // Do any additional setup after loading the view.
     }
 
@@ -25,4 +31,21 @@ class FinalResultViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
 
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        
+        cell.backgroundColor = UIColor.magenta
+        return cell
+    }
 }

@@ -27,6 +27,9 @@ class SingleModeViewController: UIViewController {
 	var gameCounter = 5
     var startGameCounter = 3
     
+    var cardPassed = [Int] ()
+    var cardCorrect = [Int] ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -62,6 +65,16 @@ class SingleModeViewController: UIViewController {
             gameViewController = segue.destination as! GameViewController
         }
         
+        if(segue.identifier == "finalResultSegue"){
+            let finalResultViewController = segue.destination as! FinalResultViewController
+            
+            finalResultViewController.cardPassed = cardPassed
+            finalResultViewController.cardCorrect = cardCorrect
+            
+        }
+        
+        
+        
     }
     
     func startGyro() {
@@ -87,16 +100,19 @@ class SingleModeViewController: UIViewController {
                             self?.GameView.isHidden = true
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGameWin()
-                            self?.gameViewController?.didChangeCard()
+                            let cardId = self?.gameViewController?.didChangeCard()
                             didEnterPass = true
+                            self?.cardPassed.append(cardId!)
+                            
                         }
                         
                         if(angle < 60 && !didEnterCorrect){
                             self?.GameView.isHidden = true
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGamePass()
-                            self?.gameViewController?.didChangeCard()
+                            let cardId = self?.gameViewController?.didChangeCard()
                             didEnterCorrect = true
+                            self?.cardCorrect.append(cardId!)
                             
                         }
                         

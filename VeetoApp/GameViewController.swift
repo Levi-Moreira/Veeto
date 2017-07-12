@@ -30,13 +30,13 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        words.append(Card(mainCard: "Dance", firstCard: "Ballet", secondCard: "Salsa", thirdCard: "Tango", fourthCard: "Ballroom", fifthCard: "Movement"))
+        words.append(Card(id: 1, mainCard: "Dance", firstCard: "Ballet", secondCard: "Salsa", thirdCard: "Tango", fourthCard: "Ballroom", fifthCard: "Movement"))
         
-        words.append(Card(mainCard: "Flight", firstCard: "Bird", secondCard: "Cockpit", thirdCard: "Pilot", fourthCard: "Fly", fifthCard: "Air"))
+        words.append(Card(id: 2, mainCard: "Flight", firstCard: "Bird", secondCard: "Cockpit", thirdCard: "Pilot", fourthCard: "Fly", fifthCard: "Air"))
         
-        words.append(Card(mainCard: "Pen", firstCard: "Ink", secondCard: "Ballpoint", thirdCard: "Name", fourthCard: "Astronaut", fifthCard: "BIC"))
+        words.append(Card(id: 3, mainCard: "Pen", firstCard: "Ink", secondCard: "Ballpoint", thirdCard: "Name", fourthCard: "Astronaut", fifthCard: "BIC"))
         
-        words.append(Card(mainCard: "Letter", firstCard: "Writing", secondCard: "Stamp", thirdCard: "Mail", fourthCard: "Alphabet", fifthCard: "Email"))
+        words.append(Card(id: 4, mainCard: "Letter", firstCard: "Writing", secondCard: "Stamp", thirdCard: "Mail", fourthCard: "Alphabet", fifthCard: "Email"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,9 @@ class GameViewController: UIViewController {
     }
     
     
-    func didChangeCard(){
+    func didChangeCard() -> Int {
+        
+        let id = words[index].id
         
         if(index == words.count){
             index = 0
@@ -61,6 +63,8 @@ class GameViewController: UIViewController {
         index = index + 1
         
         print("should change card")
+        
+        return id
     }
     
 

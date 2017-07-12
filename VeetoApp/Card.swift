@@ -10,11 +10,14 @@ import Foundation
 
 struct Card{
     
+    let id: Int
     let mainCard : String
     let firstCard : String
     let secondCard : String
     let thirdCard : String
     let fourthCard : String
     let fifthCard : String
+    
+    
     
 }

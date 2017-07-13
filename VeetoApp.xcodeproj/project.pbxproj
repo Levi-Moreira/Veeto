@@ -20,8 +20,9 @@
 		A24A119F1F0ACD9500B73D92 /* VeetoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A119E1F0ACD9500B73D92 /* VeetoAppTests.swift */; };
 		A24A11AA1F0ACD9500B73D92 /* VeetoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24A11A91F0ACD9500B73D92 /* VeetoAppUITests.swift */; };
 		A24A11B81F0AD19300B73D92 /* Green Gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */; };
+		A2C7C37A1F181B1000D001FE /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7C3781F181B1000D001FE /* Card+CoreDataClass.swift */; };
+		A2C7C37B1F181B1000D001FE /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7C3791F181B1000D001FE /* Card+CoreDataProperties.swift */; };
 		A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */; };
-		A2FC5F051F0D449B0050E629 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F041F0D449B0050E629 /* Card.swift */; };
 		A2FC5F071F0D45780050E629 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F061F0D45780050E629 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +63,9 @@
 		A24A11A91F0ACD9500B73D92 /* VeetoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeetoAppUITests.swift; sourceTree = "<group>"; };
 		A24A11AB1F0ACD9500B73D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green Gradient.jpg"; sourceTree = "<group>"; };
+		A2C7C3781F181B1000D001FE /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataClass.swift"; path = "VeetoApp/Card+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A2C7C3791F181B1000D001FE /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataProperties.swift"; path = "VeetoApp/Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleModeViewController.swift; sourceTree = "<group>"; };
-		A2FC5F041F0D449B0050E629 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A2FC5F061F0D45780050E629 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,8 @@
 		A24A117A1F0ACD9500B73D92 = {
 			isa = PBXGroup;
 			children = (
+				A2C7C3781F181B1000D001FE /* Card+CoreDataClass.swift */,
+				A2C7C3791F181B1000D001FE /* Card+CoreDataProperties.swift */,
 				A24A11851F0ACD9500B73D92 /* VeetoApp */,
 				A24A119D1F0ACD9500B73D92 /* VeetoAppTests */,
 				A24A11A81F0ACD9500B73D92 /* VeetoAppUITests */,
@@ -124,7 +128,6 @@
 				A24A11951F0ACD9500B73D92 /* Info.plist */,
 				A24A118D1F0ACD9500B73D92 /* VeetoApp.xcdatamodeld */,
 				A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */,
-				A2FC5F041F0D449B0050E629 /* Card.swift */,
 				A2FC5F061F0D45780050E629 /* ResultViewController.swift */,
 				A20A03441F0FF276004C21B1 /* Constants.swift */,
 				A20A03461F100517004C21B1 /* GameViewController.swift */,
@@ -289,10 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A24A11891F0ACD9500B73D92 /* MenuViewController.swift in Sources */,
+				A2C7C37A1F181B1000D001FE /* Card+CoreDataClass.swift in Sources */,
 				A24A118F1F0ACD9500B73D92 /* VeetoApp.xcdatamodeld in Sources */,
-				A2FC5F051F0D449B0050E629 /* Card.swift in Sources */,
 				A24A11871F0ACD9500B73D92 /* AppDelegate.swift in Sources */,
 				A20A03471F100517004C21B1 /* GameViewController.swift in Sources */,
+				A2C7C37B1F181B1000D001FE /* Card+CoreDataProperties.swift in Sources */,
 				A20A03451F0FF276004C21B1 /* Constants.swift in Sources */,
 				A240B0701F13EE6E00592B04 /* FinalResultViewController.swift in Sources */,
 				A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */,

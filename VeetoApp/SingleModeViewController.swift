@@ -101,7 +101,7 @@ class SingleModeViewController: UIViewController {
                             
                             didEnterCorrect = true
                             
-                            self?.cardCorrect.append(cardId!)
+                            self?.cardCorrect.append(Int(cardId!))
                             
                         }
                         
@@ -114,7 +114,7 @@ class SingleModeViewController: UIViewController {
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterPass = true
-                            self?.cardPassed.append(cardId!)
+                            self?.cardPassed.append(Int(cardId!))
                             
                         }
                         

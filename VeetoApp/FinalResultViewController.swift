@@ -25,15 +25,45 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        words.append(Card(id: 1, mainCard: "Dance", firstCard: "Ballet", secondCard: "Salsa", thirdCard: "Tango", fourthCard: "Ballroom", fifthCard: "Movement"))
-        
-        words.append(Card(id: 2, mainCard: "Flight", firstCard: "Bird", secondCard: "Cockpit", thirdCard: "Pilot", fourthCard: "Fly", fifthCard: "Air"))
-        
-        words.append(Card(id: 3, mainCard: "Pen", firstCard: "Ink", secondCard: "Ballpoint", thirdCard: "Name", fourthCard: "Astronaut", fifthCard: "BIC"))
-        
-        words.append(Card(id: 4, mainCard: "Letter", firstCard: "Writing", secondCard: "Stamp", thirdCard: "Mail", fourthCard: "Alphabet", fifthCard: "Email"))
-        
-        
+            let card1 =  Card.create()
+            card1.id = 1
+            card1.mainWord = "Dance"
+            card1.firstWord = "Ballet"
+            card1.secondWord = "Ballet"
+            card1.thirdWord = "Ballet"
+            card1.fourthWord = "Ballet"
+            card1.fifthWord = "Ballet"
+            words.append(card1)
+            
+            let card2 =  Card.create()
+            card2.id = 1
+            card2.mainWord = "Flight"
+            card2.firstWord = "Bird"
+            card2.secondWord = "Cockpit"
+            card2.thirdWord = "Pilot"
+            card2.fourthWord = "Fly"
+            card2.fifthWord = "Air"
+            words.append(card2)
+            
+            let card3 =  Card.create()
+            card3.id = 1
+            card3.mainWord = "Pen"
+            card3.firstWord = "Ink"
+            card3.secondWord = "Ballpoint"
+            card3.thirdWord = "Name"
+            card3.fourthWord = "Astronaut"
+            card3.fifthWord = "BIC"
+            words.append(card3)
+            
+            let card4 =  Card.create()
+            card4.id = 1
+            card4.mainWord = "Letter"
+            card4.firstWord = "Writing"
+            card4.secondWord = "Stamp"
+            card4.thirdWord = "Mail"
+            card4.fourthWord = "Alphabet"
+            card4.fifthWord = "Email"
+            words.append(card4)
         
         // Do any additional setup after loading the view.
     }
@@ -61,19 +91,19 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CardCollectionViewCell
         
-        cell.mainWord.text = words[indexPath.row].mainCard
-        cell.firstWord.text = words[indexPath.row].firstCard
-        cell.secondWord.text = words[indexPath.row].secondCard
-        cell.thirdWord.text = words[indexPath.row].thirdCard
-        cell.fourthWord.text = words[indexPath.row].fourthCard
-        cell.fifthWord.text = words[indexPath.row].fifthCard
+        cell.mainWord.text = words[indexPath.row].mainWord
+        cell.firstWord.text = words[indexPath.row].firstWord
+        cell.secondWord.text = words[indexPath.row].secondWord
+        cell.thirdWord.text = words[indexPath.row].thirdWord
+        cell.fourthWord.text = words[indexPath.row].fourthWord
+        cell.fifthWord.text = words[indexPath.row].fifthWord
         
         
-        if(cardPassed.contains(words[indexPath.row].id) ){
+        if(cardPassed.contains(Int(words[indexPath.row].id)) ){
             cell.backgroundColor = UIColor.red
         }
         
-        if(cardCorrect.contains(words[indexPath.row].id) ){
+        if(cardCorrect.contains(Int(words[indexPath.row].id)) ){
             cell.backgroundColor = UIColor.green
         }
         

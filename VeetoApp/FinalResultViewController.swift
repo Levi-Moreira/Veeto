@@ -70,7 +70,11 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         
         
         if(cardPassed.contains(words[indexPath.row].id) ){
-            cell.backgroundColor = UIColor.blue
+            cell.backgroundColor = UIColor.red
+        }
+        
+        if(cardCorrect.contains(words[indexPath.row].id) ){
+            cell.backgroundColor = UIColor.green
         }
         
         

@@ -10,6 +10,15 @@ import UIKit
 
 class GameViewController: UIViewController {
     
+    var words  = [Card]()
+    
+    var index = 0
+    
+    var currentCardId : Int {
+        get {
+            return words[index].id
+        }
+    }
     
     @IBOutlet weak var mainWord: UILabel!
     
@@ -24,8 +33,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var fifthWord: UILabel!
     
    
-    var words  = [Card]()
-    var index = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,27 +52,27 @@ class GameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func didChangeCard() -> Int {
-        
-        let id = words[index].id
-        
-        if(index == words.count){
-            index = 0
-        }
-        
+    func loadCard(){
         mainWord.text = words[index].mainCard
         firstWord.text = words[index].firstCard
         secondWord.text = words[index].secondCard
         thirdWord.text = words[index].thirdCard
         fourthWord.text = words[index].fourthCard
         fifthWord.text = words[index].fifthCard
+    }
+    
+    
+    func didChangeCard() {
         
         index = index + 1
         
-        print("should change card")
+        if(index == words.count){
+            index = 0
+        }
         
-        return id
+        loadCard()
+        
+        
     }
     
 

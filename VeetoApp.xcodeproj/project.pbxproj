@@ -73,7 +73,7 @@
 		A24A11A91F0ACD9500B73D92 /* VeetoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeetoAppUITests.swift; sourceTree = "<group>"; };
 		A24A11AB1F0ACD9500B73D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green Gradient.jpg"; sourceTree = "<group>"; };
-		A259BB571F169BC00019A7D8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A259BB571F169BC00019A7D8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleModeViewController.swift; sourceTree = "<group>"; };
 		A2FC5F041F0D449B0050E629 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A2FC5F061F0D45780050E629 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 				TargetAttributes = {
 					A24A11821F0ACD9500B73D92 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YE6GS5VH8M;
+						DevelopmentTeam = PTC33C9FM7;
 						ProvisioningStyle = Automatic;
 					};
 					A24A11991F0ACD9500B73D92 = {
@@ -641,11 +641,11 @@
 			baseConfigurationReference = 594809CB36C97B8B749016C7 /* Pods-VeetoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YE6GS5VH8M;
+				DEVELOPMENT_TEAM = PTC33C9FM7;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE22.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -657,11 +657,11 @@
 			baseConfigurationReference = 26B229150EBC2C853DBA2AD4 /* Pods-VeetoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YE6GS5VH8M;
+				DEVELOPMENT_TEAM = PTC33C9FM7;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE22.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

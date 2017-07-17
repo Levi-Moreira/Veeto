@@ -24,6 +24,11 @@ class SingleModeViewController: UIViewController {
 
     weak var gameViewController : GameViewController?
     
+    let preferences = UserDefaults.standard
+    
+    let soundSettings = "soundSettings"
+    let timeSettings = "timeSettings"
+    
     
     /*Start up CoreMotion manager*/
     var motionManager = CMMotionManager()
@@ -45,7 +50,18 @@ class SingleModeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //set up game time
-        gameCounter = 10
+        
+        switch preferences.integer(forKey: timeSettings) {
+        case 0:
+            gameCounter = 60
+        case 1:
+            gameCounter = 90
+        case 2:
+            gameCounter = 120
+        default:
+            gameCounter = 60
+        }
+        
         
         //3 seconds for the game to start
         startGameCounter = 3

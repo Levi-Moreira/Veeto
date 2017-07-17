@@ -8,84 +8,153 @@
 
 /* Begin PBXBuildFile section */
 		00BD7CD6DCA1720CDC14C6519D92ED92 /* Pods-VeetoAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4ACBDBF89A5E909491F94AFC580BCCF /* Pods-VeetoAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DC1B8A48FF5A4A82FFF4EB39CB1E500 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D229264664EB7349771FB74B517DC62 /* SCLAlertView.swift */; };
+		0E61C0F6CFDD54AFDBB2E194C05B16E4 /* Pods-VeetoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */; };
+		1560A5859F1D52078B5369C32E5777E8 /* NominalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938FFFABDB857E5FC00279A487D80907 /* NominalType.swift */; };
 		1A91B85FB85A632E54C1F1EC5C8E73CB /* Pods-VeetoAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5641F829CD3F9BD7532BF2599D1334B /* Pods-VeetoAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EA05468BD1BAB96C16C7F3C71740511 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */; };
+		242EE70038A8CF10D529DFE34406AC38 /* Serializer+Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8DA00D2469976CC92367737EA8219 /* Serializer+Legacy.swift */; };
+		26FAC8C15A307FD25FC42045A3838A32 /* PointerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBED731F60909643B3D1B5EA047C5DD /* PointerType.swift */; };
+		27EE51CB507A064540C148AD12507AAE /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B315A088F7D6CEDD5C3A90894EB274D0 /* HexColorTransform.swift */; };
+		29492B696043FA2477B3B0C0FC387163 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6046D1FEDA41595988FCA445F4D20B77 /* DateFormatterTransform.swift */; };
+		364F277E502303CAB9A5AF2B446E6E78 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6292D6DBC21F545637399440684EEF /* Metadata.swift */; };
+		3CC5463E2FA9A9F4D498112B1966A398 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A51830FF0BB5FB9C8DFFF84855018 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4A3BD42A3111F870B5A0B7157EE695 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC665A1B809BDEF0A502079920FCD02 /* DataTransform.swift */; };
 		4B9A75B7E3CB0453E8F0F8D413171BDD /* Pods-VeetoAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C2BEA9A62F33E969CD8FA203CB3C5 /* Pods-VeetoAppUITests-dummy.m */; };
-		72462DCD9E126353AF810095AEB05759 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */; };
-		774034F9F680AFE4751DF11492995128 /* Pods-VeetoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */; };
+		53A3447AA901ED8F859E01B67690023B /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82069A94865641379D676ED942102D1 /* URLTransform.swift */; };
+		5D7FD620194659675BCCCF740932A070 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA0612898325D61D0D74E332B3005F /* SCLExtensions.swift */; };
+		6300BE91C80F00D6F5D58111B7BF1CCE /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0892CCA988A73E8D5A3AC48AA4FB1 /* DateTransform.swift */; };
+		6701BEB9C5C572031F6BF555BBF5B0EB /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB13C43322B7DCCE7E5F243D681FB27 /* Protocol.swift */; };
+		6B9811B9F047288A6746F71489FFE1C2 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA2DF6D1FEE0E7B3BE6570FA4C0744 /* EnumTransform.swift */; };
+		6EAFB48CAC81D1B73C6B8B473AD6EAE2 /* HandyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EED2E3A450639F97D8C4AE4067CC3EC /* HandyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		701CAE14A296786F3E0F095D10761282 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06704804326F5B181ED5C97A646F3C3 /* TransformType.swift */; };
+		82EC2D86B87A7E75BEE13B55B9C4FC2C /* ReflectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96594981476D60F5B4DBD7FE0FAC8E /* ReflectionHelper.swift */; };
+		872988FFD3C5DF86FDC5C29061DA608D /* AnyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392A5A1793A6C90ACE4F68A4A400716 /* AnyExtensions.swift */; };
 		8F4998D501889354A098278D3075A3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		92CA8BC3D4EF0333824D1259646CD4FA /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECF739C6363C49EBCBF8F1675B4CED /* ISO8601DateTransform.swift */; };
 		9EF4FF66473AE1A5C86DB3FE57CF69A7 /* Pods-VeetoAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF398D32174CFEB71556EB0342D67DF /* Pods-VeetoAppTests-dummy.m */; };
-		A131E1EB1AB8867D169AC772507ABF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A2F2C1A217E357E4CE3833EE95EFA46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AFA1A372707197E1CD4CDA5B4EBE9855 /* Pods-VeetoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C876C585EA0BF6A2FD7F710EFF9F4BDE /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */; };
-		E2CDD9EA5EAB001FC2AB168B40B4BFED /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F96266E911E9D0E28BEBE4DCD67F6E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		ADA4770F8B5F4BA15EE1BE5D20D12A6F /* Pods-VeetoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40F995B50035838870E6828C707901A /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7F50B0BDCA5C29D8F22857D04ACC7 /* Serializer.swift */; };
+		B528BF8050BB7BCF676AA384AE70B478 /* OtherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEE555B695718CC2A27E5004A8AA97 /* OtherExtension.swift */; };
+		B9C590B181A61139E47F01CA01010E0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BC5F1A740F87255CD1E442AC9B56EF39 /* HandyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A918993A9A7A4C4AE533683698665373 /* HandyJSON-dummy.m */; };
+		C96F7BCB6159EE8612B3C19BC397E5E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CB5A800ADD511AF1AAFB5A78559F48D8 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B194BD0C202580A8A0F348AA880F9 /* CustomDateFormatTransform.swift */; };
+		D7F7F51521AFA91981339206DDC1E514 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D037253CCE3FFACA74BF13AE1395C5 /* Configuration.swift */; };
+		DF74D1E3BDD0D4CCD2627EB819C98486 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B7DD670278C64816A25DEFF829A2B8 /* Deserializer.swift */; };
+		E16B7AB3555B40E4CF1CB1AFB5E36A49 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA4769A1BCD4AE7A971DCA2D605D42C /* Properties.swift */; };
+		E1DB116DB8D5C3189C5E101D7B981B0D /* HandyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3885561D684F693EA248E5B4B2775BE4 /* HandyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E687B7AF9FBEF72AB50119696240BFF2 /* HelpingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34364DBDEFAD0DDDDDF28F13BA4C70 /* HelpingMapper.swift */; };
+		EDA8A482E4BDD00F23905F0CECAEC2EA /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66155C8AD7946687C1A01E73002D7998 /* TransformOf.swift */; };
+		F3A1CD8B70442DE21EAF1B979F518F71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F6116797BF6C5C889A32A959A03C849F /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3CBD125C766649E8267505EA1E280A /* NSDecimalNumberTransform.swift */; };
+		F958FFA2AB036C8A8FA13D01B1ED3D1D /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F403625F23EA801A5EEEDD47876E78 /* SCLAlertView-dummy.m */; };
+		FD055CC3FC3F7F97D248CE7FA722E209 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B3ED153B027726021B88899D96D50 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3F26686BB11A44EBF544DEAD1B4C607 /* PBXContainerItemProxy */ = {
+		B5FD375E1C31FBE6459747AB6AD94F68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F527478B6E1BABA10F6C69B1922D1C22;
+			remoteGlobalIDString = 2771B241FCE337E606D5617826A23443;
+			remoteInfo = HandyJSON;
+		};
+		E214E70D3C1BAB1507FFABF726C42C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9A658D7EBCB9260ADA71262D2AB914;
 			remoteInfo = SCLAlertView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoApp-dummy.m"; sourceTree = "<group>"; };
+		06D037253CCE3FFACA74BF13AE1395C5 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
 		095277666D240166534C3960AE52FA3A /* Pods-VeetoAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppTests-frameworks.sh"; sourceTree = "<group>"; };
-		0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoApp.framework; path = "Pods-VeetoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5313BC327591E06A12CFDA25E4DC5E /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		0D4B08D6709480DDBB1C7410648BDB7D /* HandyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HandyJSON.modulemap; sourceTree = "<group>"; };
+		1183647E0FF7CCC0D5DFF301DC7F1350 /* HandyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandyJSON-prefix.pch"; sourceTree = "<group>"; };
+		19DAEE32D25FA6F0785606175D99D66E /* Pods_VeetoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppTests.framework; path = "Pods-VeetoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0B194BD0C202580A8A0F348AA880F9 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Source/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		1D229264664EB7349771FB74B517DC62 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		1E3CBD125C766649E8267505EA1E280A /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Source/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		207B324062471960B9CB7FC81397D6A3 /* Pods-VeetoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2392A5A1793A6C90ACE4F68A4A400716 /* AnyExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyExtensions.swift; path = Source/AnyExtensions.swift; sourceTree = "<group>"; };
+		258D95DB8162B8FC5BA3458E05286FCB /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F403625F23EA801A5EEEDD47876E78 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
 		29DA5B5DBD3F427A512DB977572EF82C /* Pods-VeetoAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoAppTests.modulemap"; sourceTree = "<group>"; };
-		2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppTests.framework; path = "Pods-VeetoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3885561D684F693EA248E5B4B2775BE4 /* HandyJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HandyJSON.h; path = Source/HandyJSON.h; sourceTree = "<group>"; };
 		3BB38FC2A9ED345645BE07265987A3FD /* Pods-VeetoAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppTests-resources.sh"; sourceTree = "<group>"; };
+		3FBED731F60909643B3D1B5EA047C5DD /* PointerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PointerType.swift; path = Source/PointerType.swift; sourceTree = "<group>"; };
 		42E8FD46D27C80E74CAB0A32F8620F4E /* Pods-VeetoAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppUITests-resources.sh"; sourceTree = "<group>"; };
-		4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		49DA2DF6D1FEE0E7B3BE6570FA4C0744 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Source/EnumTransform.swift; sourceTree = "<group>"; };
 		4FCAA752E7F2C035D5CEC0BB266D96FB /* Pods-VeetoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoApp-resources.sh"; sourceTree = "<group>"; };
-		53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoApp.release.xcconfig"; sourceTree = "<group>"; };
 		55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoApp-umbrella.h"; sourceTree = "<group>"; };
+		56ECF739C6363C49EBCBF8F1675B4CED /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Source/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		5AC665A1B809BDEF0A502079920FCD02 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Source/DataTransform.swift; sourceTree = "<group>"; };
+		5ACEDA2EACC21EDEB847A4252EC1D795 /* Pods_VeetoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoApp.framework; path = "Pods-VeetoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD66281FB2AFEF54C09D9B834E89C5E /* Pods-VeetoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoApp-frameworks.sh"; sourceTree = "<group>"; };
+		5BB13C43322B7DCCE7E5F243D681FB27 /* Protocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Source/Protocol.swift; sourceTree = "<group>"; };
+		6046D1FEDA41595988FCA445F4D20B77 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Source/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		606A51830FF0BB5FB9C8DFFF84855018 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
 		61EA1C4FB2FDFD2EE5B1B870B2BE4188 /* Pods-VeetoAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66155C8AD7946687C1A01E73002D7998 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Source/TransformOf.swift; sourceTree = "<group>"; };
 		6C4FFCE6552CB698A5B13E239207A365 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		75D8DA00D2469976CC92367737EA8219 /* Serializer+Legacy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Serializer+Legacy.swift"; path = "Source/Serializer+Legacy.swift"; sourceTree = "<group>"; };
 		7C440B12C9210D1B1D740A4ECEC03449 /* Pods-VeetoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppUITests.framework; path = "Pods-VeetoAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D34364DBDEFAD0DDDDDF28F13BA4C70 /* HelpingMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelpingMapper.swift; path = Source/HelpingMapper.swift; sourceTree = "<group>"; };
+		82EA0612898325D61D0D74E332B3005F /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		8D8A6FCC8DE3061AEAD8E645984783B6 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
 		8DF88B1B58F33352BFCD573AC0B1F46E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E03FC12FB4F4E4F6AA83AFDCAB9878F /* Pods-VeetoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoApp.modulemap"; sourceTree = "<group>"; };
+		938FFFABDB857E5FC00279A487D80907 /* NominalType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NominalType.swift; path = Source/NominalType.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97B7DD670278C64816A25DEFF829A2B8 /* Deserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = Source/Deserializer.swift; sourceTree = "<group>"; };
 		9A822355D61955D81607E8B85DA5F164 /* Pods-VeetoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CE7F50B0BDCA5C29D8F22857D04ACC7 /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serializer.swift; path = Source/Serializer.swift; sourceTree = "<group>"; };
+		9EED2E3A450639F97D8C4AE4067CC3EC /* HandyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandyJSON-umbrella.h"; sourceTree = "<group>"; };
+		A1CEE555B695718CC2A27E5004A8AA97 /* OtherExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OtherExtension.swift; path = Source/OtherExtension.swift; sourceTree = "<group>"; };
 		A4ACBDBF89A5E909491F94AFC580BCCF /* Pods-VeetoAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		A4D480123CA4B06C9199C853D019EA60 /* HandyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyJSON.xcconfig; sourceTree = "<group>"; };
+		A918993A9A7A4C4AE533683698665373 /* HandyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HandyJSON-dummy.m"; sourceTree = "<group>"; };
 		A99049A404ABBD60E075261593F6A988 /* Pods-VeetoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA6292D6DBC21F545637399440684EEF /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = Source/Metadata.swift; sourceTree = "<group>"; };
+		AEA4769A1BCD4AE7A971DCA2D605D42C /* Properties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Properties.swift; path = Source/Properties.swift; sourceTree = "<group>"; };
 		AF4B6FFA3D0B6A109881BF6EA36D4EC0 /* Pods-VeetoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AF896F4F8E84B60400CDF2970BFE1B7F /* Pods-VeetoAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2C0892CCA988A73E8D5A3AC48AA4FB1 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Source/DateTransform.swift; sourceTree = "<group>"; };
+		B315A088F7D6CEDD5C3A90894EB274D0 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Source/HexColorTransform.swift; sourceTree = "<group>"; };
 		BB7F3CC466A1BC3994D9BCFBFB85F1B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC032721BD2A779B363D58F87B8252B3 /* Pods_VeetoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppUITests.framework; path = "Pods-VeetoAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06704804326F5B181ED5C97A646F3C3 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Source/TransformType.swift; sourceTree = "<group>"; };
 		C08A45FB9EF6A5775B8EF1CCB8881351 /* Pods-VeetoAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoAppUITests.modulemap"; sourceTree = "<group>"; };
 		C25C2BEA9A62F33E969CD8FA203CB3C5 /* Pods-VeetoAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoAppUITests-dummy.m"; sourceTree = "<group>"; };
 		C5641F829CD3F9BD7532BF2599D1334B /* Pods-VeetoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoAppTests-umbrella.h"; sourceTree = "<group>"; };
 		C73340662C71818B7358CEBFE19A408E /* Pods-VeetoAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CB08355B506074856255238793F68803 /* Pods-VeetoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CD023DDF9D51793963916D7A83BB6B38 /* Pods-VeetoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		CF96594981476D60F5B4DBD7FE0FAC8E /* ReflectionHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectionHelper.swift; path = Source/ReflectionHelper.swift; sourceTree = "<group>"; };
+		D7C2986BCEC7CCBFF22316AEB33D44F5 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
 		DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DFF398D32174CFEB71556EB0342D67DF /* Pods-VeetoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoAppTests-dummy.m"; sourceTree = "<group>"; };
-		ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
-		F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		E29ED384B4CE4936F145CEA958565CE1 /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandyJSON.framework; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD62BE5ADEBC63C917D08E373215316 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82069A94865641379D676ED942102D1 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Source/URLTransform.swift; sourceTree = "<group>"; };
 		F95BA6C5A0E829CC57378D2E97DA1DE6 /* Pods-VeetoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FEB0773C0CFDCB1258C59FC8F5087B6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7B3ED153B027726021B88899D96D50 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BD84339E225DED064BEC08273267EB5 /* Frameworks */ = {
+		21C8E514100D5D4C721F0A8610B05CA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A131E1EB1AB8867D169AC772507ABF8B /* Foundation.framework in Frameworks */,
+				C96F7BCB6159EE8612B3C19BC397E5E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,11 +174,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB961071BABF50A38AE20DCC3C634C90 /* Frameworks */ = {
+		ACFA5D93773CB7616FB048DCA26964C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96266E911E9D0E28BEBE4DCD67F6E1A /* Foundation.framework in Frameworks */,
+				F3A1CD8B70442DE21EAF1B979F518F71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44445E35A8BE8A239F24275E41E0E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C590B181A61139E47F01CA01010E0D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,17 +201,6 @@
 				1B5487266B673245710D8B87E4684630 /* Pods-VeetoAppUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		156A4D5D1F6DE7B422310A2120151FB4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */,
-				2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */,
-				89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */,
-				64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1B5487266B673245710D8B87E4684630 /* Pods-VeetoAppUITests */ = {
@@ -155,29 +221,30 @@
 			path = "Target Support Files/Pods-VeetoAppUITests";
 			sourceTree = "<group>";
 		};
-		21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */ = {
+		2AB7D3F6C3BCC5A8A46AB6EDCC353EEA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */,
-				79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */,
-				42753F0DBF438AAF17062729B2173DED /* Support Files */,
-			);
-			name = SCLAlertView;
-			path = SCLAlertView;
-			sourceTree = "<group>";
-		};
-		42753F0DBF438AAF17062729B2173DED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */,
-				ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */,
-				4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */,
-				D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */,
-				F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */,
-				780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */,
+				0D4B08D6709480DDBB1C7410648BDB7D /* HandyJSON.modulemap */,
+				A4D480123CA4B06C9199C853D019EA60 /* HandyJSON.xcconfig */,
+				A918993A9A7A4C4AE533683698665373 /* HandyJSON-dummy.m */,
+				1183647E0FF7CCC0D5DFF301DC7F1350 /* HandyJSON-prefix.pch */,
+				9EED2E3A450639F97D8C4AE4067CC3EC /* HandyJSON-umbrella.h */,
+				EFD62BE5ADEBC63C917D08E373215316 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
+			path = "../Target Support Files/HandyJSON";
+			sourceTree = "<group>";
+		};
+		2FE38495986CC7F75D6DF8BAD7264821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29ED384B4CE4936F145CEA958565CE1 /* HandyJSON.framework */,
+				5ACEDA2EACC21EDEB847A4252EC1D795 /* Pods_VeetoApp.framework */,
+				19DAEE32D25FA6F0785606175D99D66E /* Pods_VeetoAppTests.framework */,
+				BC032721BD2A779B363D58F87B8252B3 /* Pods_VeetoAppUITests.framework */,
+				258D95DB8162B8FC5BA3458E05286FCB /* SCLAlertView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6DB31F0D5F598EA9F78BF81C73DCA8D1 /* Pods-VeetoApp */ = {
@@ -198,15 +265,84 @@
 			path = "Target Support Files/Pods-VeetoApp";
 			sourceTree = "<group>";
 		};
+		72EBEA1CA3A007422A73E3961C05EFC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB70080C90B10AD3487859AA244B3791 /* HandyJSON */,
+				AB28D503F93508F1D0900A407EE12F4A /* SCLAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */,
-				156A4D5D1F6DE7B422310A2120151FB4 /* Products */,
+				72EBEA1CA3A007422A73E3961C05EFC3 /* Pods */,
+				2FE38495986CC7F75D6DF8BAD7264821 /* Products */,
 				0420E484A681CBEA41CEBDE389622FD8 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9A97B31136056DA5538F555A7E453344 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEB0773C0CFDCB1258C59FC8F5087B6F /* Info.plist */,
+				0A5313BC327591E06A12CFDA25E4DC5E /* SCLAlertView.modulemap */,
+				D7C2986BCEC7CCBFF22316AEB33D44F5 /* SCLAlertView.xcconfig */,
+				28F403625F23EA801A5EEEDD47876E78 /* SCLAlertView-dummy.m */,
+				8D8A6FCC8DE3061AEAD8E645984783B6 /* SCLAlertView-prefix.pch */,
+				606A51830FF0BB5FB9C8DFFF84855018 /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		AB28D503F93508F1D0900A407EE12F4A /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				1D229264664EB7349771FB74B517DC62 /* SCLAlertView.swift */,
+				82EA0612898325D61D0D74E332B3005F /* SCLExtensions.swift */,
+				9A97B31136056DA5538F555A7E453344 /* Support Files */,
+			);
+			name = SCLAlertView;
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		AB70080C90B10AD3487859AA244B3791 /* HandyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2392A5A1793A6C90ACE4F68A4A400716 /* AnyExtensions.swift */,
+				06D037253CCE3FFACA74BF13AE1395C5 /* Configuration.swift */,
+				1D0B194BD0C202580A8A0F348AA880F9 /* CustomDateFormatTransform.swift */,
+				5AC665A1B809BDEF0A502079920FCD02 /* DataTransform.swift */,
+				6046D1FEDA41595988FCA445F4D20B77 /* DateFormatterTransform.swift */,
+				B2C0892CCA988A73E8D5A3AC48AA4FB1 /* DateTransform.swift */,
+				97B7DD670278C64816A25DEFF829A2B8 /* Deserializer.swift */,
+				49DA2DF6D1FEE0E7B3BE6570FA4C0744 /* EnumTransform.swift */,
+				3885561D684F693EA248E5B4B2775BE4 /* HandyJSON.h */,
+				7D34364DBDEFAD0DDDDDF28F13BA4C70 /* HelpingMapper.swift */,
+				B315A088F7D6CEDD5C3A90894EB274D0 /* HexColorTransform.swift */,
+				56ECF739C6363C49EBCBF8F1675B4CED /* ISO8601DateTransform.swift */,
+				FF7B3ED153B027726021B88899D96D50 /* Logger.swift */,
+				AA6292D6DBC21F545637399440684EEF /* Metadata.swift */,
+				938FFFABDB857E5FC00279A487D80907 /* NominalType.swift */,
+				1E3CBD125C766649E8267505EA1E280A /* NSDecimalNumberTransform.swift */,
+				A1CEE555B695718CC2A27E5004A8AA97 /* OtherExtension.swift */,
+				3FBED731F60909643B3D1B5EA047C5DD /* PointerType.swift */,
+				AEA4769A1BCD4AE7A971DCA2D605D42C /* Properties.swift */,
+				5BB13C43322B7DCCE7E5F243D681FB27 /* Protocol.swift */,
+				CF96594981476D60F5B4DBD7FE0FAC8E /* ReflectionHelper.swift */,
+				9CE7F50B0BDCA5C29D8F22857D04ACC7 /* Serializer.swift */,
+				75D8DA00D2469976CC92367737EA8219 /* Serializer+Legacy.swift */,
+				66155C8AD7946687C1A01E73002D7998 /* TransformOf.swift */,
+				C06704804326F5B181ED5C97A646F3C3 /* TransformType.swift */,
+				F82069A94865641379D676ED942102D1 /* URLTransform.swift */,
+				2AB7D3F6C3BCC5A8A46AB6EDCC353EEA /* Support Files */,
+			);
+			name = HandyJSON;
+			path = HandyJSON;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -235,14 +371,6 @@
 			path = "Target Support Files/Pods-VeetoAppTests";
 			sourceTree = "<group>";
 		};
-		CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +382,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0041B16C8AFA9D7E65A7DC5DB490DF8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAFB48CAC81D1B73C6B8B473AD6EAE2 /* HandyJSON-umbrella.h in Headers */,
+				E1DB116DB8D5C3189C5E101D7B981B0D /* HandyJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095CEADADF71C45A830688F358993BE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC5463E2FA9A9F4D498112B1966A398 /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2695A7C2992060EE5F479F53D28A6AC4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,19 +407,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92BCF34991746127259B5877BD118AD7 /* Headers */ = {
+		C641E0C6E51E1BCA81EEE52AD5BBE846 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA1A372707197E1CD4CDA5B4EBE9855 /* Pods-VeetoApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B48D5EE9D5EA9D1024709EA956451148 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2CDD9EA5EAB001FC2AB168B40B4BFED /* SCLAlertView-umbrella.h in Headers */,
+				ADA4770F8B5F4BA15EE1BE5D20D12A6F /* Pods-VeetoApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +426,57 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		74F0264AC7C07BF7277D4FFDDDA78B27 /* Pods-VeetoApp */ = {
+		2771B241FCE337E606D5617826A23443 /* HandyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65369187FBBB0DE00A6116DB2A9E6FE8 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */;
+			buildConfigurationList = 84100B5FE0A3271E01C525895A9FEFE7 /* Build configuration list for PBXNativeTarget "HandyJSON" */;
 			buildPhases = (
-				C7B70271BD424B9F44399DC1ABA4DB08 /* Sources */,
-				2BD84339E225DED064BEC08273267EB5 /* Frameworks */,
-				92BCF34991746127259B5877BD118AD7 /* Headers */,
+				AE422086F83D8AA8DC6F0FF530616CDB /* Sources */,
+				B44445E35A8BE8A239F24275E41E0E3B /* Frameworks */,
+				0041B16C8AFA9D7E65A7DC5DB490DF8B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C6BD0F2FFD7974DBE64445BF5E351752 /* PBXTargetDependency */,
+			);
+			name = HandyJSON;
+			productName = HandyJSON;
+			productReference = E29ED384B4CE4936F145CEA958565CE1 /* HandyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C9A658D7EBCB9260ADA71262D2AB914 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350DB0F64FB5F1C16513AF3FCF7120C6 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				BA8091B2B23713AD89C1834FE363095D /* Sources */,
+				ACFA5D93773CB7616FB048DCA26964C6 /* Frameworks */,
+				095CEADADF71C45A830688F358993BE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 258D95DB8162B8FC5BA3458E05286FCB /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C560F348F787B578F7C167C39A9D791 /* Pods-VeetoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D6DF0B652CAB697BADEB5D72DE8C01 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */;
+			buildPhases = (
+				52E5A7A901C64D868301C53297F83CAD /* Sources */,
+				21C8E514100D5D4C721F0A8610B05CA6 /* Frameworks */,
+				C641E0C6E51E1BCA81EEE52AD5BBE846 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				823FA85BB75035CA742A18C0B4275743 /* PBXTargetDependency */,
+				0CC9621E6AA353CF121AFB3E1A6683EC /* PBXTargetDependency */,
 			);
 			name = "Pods-VeetoApp";
 			productName = "Pods-VeetoApp";
-			productReference = 0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */;
+			productReference = 5ACEDA2EACC21EDEB847A4252EC1D795 /* Pods_VeetoApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DCB8262DAABDE8F59F51A5013B3AE19E /* Pods-VeetoAppUITests */ = {
@@ -321,24 +493,7 @@
 			);
 			name = "Pods-VeetoAppUITests";
 			productName = "Pods-VeetoAppUITests";
-			productReference = 89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F0B2F4EA1526BF24EA06EE03398EA17 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
-			buildPhases = (
-				3064625EF0A3C237250D2027B59C2F79 /* Sources */,
-				BB961071BABF50A38AE20DCC3C634C90 /* Frameworks */,
-				B48D5EE9D5EA9D1024709EA956451148 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCLAlertView;
-			productName = SCLAlertView;
-			productReference = 64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */;
+			productReference = BC032721BD2A779B363D58F87B8252B3 /* Pods_VeetoAppUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F80260BCAC903D06EBE672D4CEB35751 /* Pods-VeetoAppTests */ = {
@@ -355,7 +510,7 @@
 			);
 			name = "Pods-VeetoAppTests";
 			productName = "Pods-VeetoAppTests";
-			productReference = 2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */;
+			productReference = 19DAEE32D25FA6F0785606175D99D66E /* Pods_VeetoAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -375,34 +530,33 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 156A4D5D1F6DE7B422310A2120151FB4 /* Products */;
+			productRefGroup = 2FE38495986CC7F75D6DF8BAD7264821 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74F0264AC7C07BF7277D4FFDDDA78B27 /* Pods-VeetoApp */,
+				2771B241FCE337E606D5617826A23443 /* HandyJSON */,
+				7C560F348F787B578F7C167C39A9D791 /* Pods-VeetoApp */,
 				F80260BCAC903D06EBE672D4CEB35751 /* Pods-VeetoAppTests */,
 				DCB8262DAABDE8F59F51A5013B3AE19E /* Pods-VeetoAppUITests */,
-				F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */,
+				2C9A658D7EBCB9260ADA71262D2AB914 /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3064625EF0A3C237250D2027B59C2F79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C876C585EA0BF6A2FD7F710EFF9F4BDE /* SCLAlertView-dummy.m in Sources */,
-				72462DCD9E126353AF810095AEB05759 /* SCLAlertView.swift in Sources */,
-				3EA05468BD1BAB96C16C7F3C71740511 /* SCLExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5083B1CD60BF4FCF28EC493F85D1F8C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B9A75B7E3CB0453E8F0F8D413171BDD /* Pods-VeetoAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E5A7A901C64D868301C53297F83CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E61C0F6CFDD54AFDBB2E194C05B16E4 /* Pods-VeetoApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,29 +568,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7B70271BD424B9F44399DC1ABA4DB08 /* Sources */ = {
+		AE422086F83D8AA8DC6F0FF530616CDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774034F9F680AFE4751DF11492995128 /* Pods-VeetoApp-dummy.m in Sources */,
+				872988FFD3C5DF86FDC5C29061DA608D /* AnyExtensions.swift in Sources */,
+				D7F7F51521AFA91981339206DDC1E514 /* Configuration.swift in Sources */,
+				CB5A800ADD511AF1AAFB5A78559F48D8 /* CustomDateFormatTransform.swift in Sources */,
+				3F4A3BD42A3111F870B5A0B7157EE695 /* DataTransform.swift in Sources */,
+				29492B696043FA2477B3B0C0FC387163 /* DateFormatterTransform.swift in Sources */,
+				6300BE91C80F00D6F5D58111B7BF1CCE /* DateTransform.swift in Sources */,
+				DF74D1E3BDD0D4CCD2627EB819C98486 /* Deserializer.swift in Sources */,
+				6B9811B9F047288A6746F71489FFE1C2 /* EnumTransform.swift in Sources */,
+				BC5F1A740F87255CD1E442AC9B56EF39 /* HandyJSON-dummy.m in Sources */,
+				E687B7AF9FBEF72AB50119696240BFF2 /* HelpingMapper.swift in Sources */,
+				27EE51CB507A064540C148AD12507AAE /* HexColorTransform.swift in Sources */,
+				92CA8BC3D4EF0333824D1259646CD4FA /* ISO8601DateTransform.swift in Sources */,
+				FD055CC3FC3F7F97D248CE7FA722E209 /* Logger.swift in Sources */,
+				364F277E502303CAB9A5AF2B446E6E78 /* Metadata.swift in Sources */,
+				1560A5859F1D52078B5369C32E5777E8 /* NominalType.swift in Sources */,
+				F6116797BF6C5C889A32A959A03C849F /* NSDecimalNumberTransform.swift in Sources */,
+				B528BF8050BB7BCF676AA384AE70B478 /* OtherExtension.swift in Sources */,
+				26FAC8C15A307FD25FC42045A3838A32 /* PointerType.swift in Sources */,
+				E16B7AB3555B40E4CF1CB1AFB5E36A49 /* Properties.swift in Sources */,
+				6701BEB9C5C572031F6BF555BBF5B0EB /* Protocol.swift in Sources */,
+				82EC2D86B87A7E75BEE13B55B9C4FC2C /* ReflectionHelper.swift in Sources */,
+				242EE70038A8CF10D529DFE34406AC38 /* Serializer+Legacy.swift in Sources */,
+				B40F995B50035838870E6828C707901A /* Serializer.swift in Sources */,
+				EDA8A482E4BDD00F23905F0CECAEC2EA /* TransformOf.swift in Sources */,
+				701CAE14A296786F3E0F095D10761282 /* TransformType.swift in Sources */,
+				53A3447AA901ED8F859E01B67690023B /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA8091B2B23713AD89C1834FE363095D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F958FFA2AB036C8A8FA13D01B1ED3D1D /* SCLAlertView-dummy.m in Sources */,
+				0DC1B8A48FF5A4A82FFF4EB39CB1E500 /* SCLAlertView.swift in Sources */,
+				5D7FD620194659675BCCCF740932A070 /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C6BD0F2FFD7974DBE64445BF5E351752 /* PBXTargetDependency */ = {
+		0CC9621E6AA353CF121AFB3E1A6683EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
-			target = F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */;
-			targetProxy = F3F26686BB11A44EBF544DEAD1B4C607 /* PBXContainerItemProxy */;
+			target = 2C9A658D7EBCB9260ADA71262D2AB914 /* SCLAlertView */;
+			targetProxy = E214E70D3C1BAB1507FFABF726C42C7C /* PBXContainerItemProxy */;
+		};
+		823FA85BB75035CA742A18C0B4275743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HandyJSON;
+			target = 2771B241FCE337E606D5617826A23443 /* HandyJSON */;
+			targetProxy = B5FD375E1C31FBE6459747AB6AD94F68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		016B8946D4AB72CD455809ED7E0F4864 /* Release */ = {
+		093614FC6635C959471B8BE7535F6D1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = D7C2986BCEC7CCBFF22316AEB33D44F5 /* SCLAlertView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -467,6 +662,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		11805C86FDA82B3C6F7A519F7932AD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D480123CA4B06C9199C853D019EA60 /* HandyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HandyJSON/HandyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HandyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -516,6 +746,40 @@
 			};
 			name = Debug;
 		};
+		1D7AE0D46FC3A825A97C4D30F3081A90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D480123CA4B06C9199C853D019EA60 /* HandyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HandyJSON/HandyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HandyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1E678ABD1DE283B2B4CB3671D1E70FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD023DDF9D51793963916D7A83BB6B38 /* Pods-VeetoAppTests.release.xcconfig */;
@@ -552,6 +816,118 @@
 			};
 			name = Release;
 		};
+		2FF397388576BA8815A7AED8410BCF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		413340B8750825C8C3AB6786DB4A9A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C2986BCEC7CCBFF22316AEB33D44F5 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56C2790A003288CF52D2D70538FC3E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		59F34E052344FD4840351F38FF9E9143 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F95BA6C5A0E829CC57378D2E97DA1DE6 /* Pods-VeetoAppUITests.release.xcconfig */;
@@ -587,41 +963,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		5B9D5B762903E6A535D35AAFE761360B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -703,83 +1044,6 @@
 			};
 			name = Debug;
 		};
-		B212A9C3389A44064876F4B759D8884D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_VeetoApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DEF62037EC25EE4097455E35964A0262 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_VeetoApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E7519A14D8D31256DBF7C18C56E147F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 207B324062471960B9CB7FC81397D6A3 /* Pods-VeetoAppUITests.debug.xcconfig */;
@@ -828,20 +1092,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65369187FBBB0DE00A6116DB2A9E6FE8 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */ = {
+		350DB0F64FB5F1C16513AF3FCF7120C6 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEF62037EC25EE4097455E35964A0262 /* Debug */,
-				B212A9C3389A44064876F4B759D8884D /* Release */,
+				413340B8750825C8C3AB6786DB4A9A28 /* Debug */,
+				093614FC6635C959471B8BE7535F6D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F0B2F4EA1526BF24EA06EE03398EA17 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		84100B5FE0A3271E01C525895A9FEFE7 /* Build configuration list for PBXNativeTarget "HandyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B9D5B762903E6A535D35AAFE761360B /* Debug */,
-				016B8946D4AB72CD455809ED7E0F4864 /* Release */,
+				11805C86FDA82B3C6F7A519F7932AD32 /* Debug */,
+				1D7AE0D46FC3A825A97C4D30F3081A90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D6DF0B652CAB697BADEB5D72DE8C01 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C2790A003288CF52D2D70538FC3E85 /* Debug */,
+				2FF397388576BA8815A7AED8410BCF8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

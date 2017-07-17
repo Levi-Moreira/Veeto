@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5V-gk-2uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="-566"/>
+            <point key="canvasLocation" x="-684" y="-964"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Ts3-Sq-xCc">
@@ -57,6 +57,9 @@
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-23" maxY="0.0"/>
                                 <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="didTapSettings:" destination="zBg-S4-FOT" eventType="touchUpInside" id="HHM-uf-UzH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veeto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7X-iR-PpJ">
                                 <rect key="frame" x="262" y="87" width="45" height="21"/>
@@ -79,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuh-xf-2h8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="193"/>
+            <point key="canvasLocation" x="-684" y="-111"/>
         </scene>
         <!--Tempo-->
         <scene sceneID="pGb-Rq-iVZ">
@@ -122,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm6-Dl-Zt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-603.16901408450701" y="997.5"/>
+            <point key="canvasLocation" x="-684" y="774"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="MvQ-Yh-aAJ">
@@ -153,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2b-WM-zaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1229" y="1845"/>
+            <point key="canvasLocation" x="-1343" y="2074"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="T28-FV-May">
@@ -223,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dae-lK-EGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-584" y="2087"/>
+            <point key="canvasLocation" x="-684" y="2119"/>
         </scene>
         <!--Title-->
         <scene sceneID="nSP-ml-gR2">
@@ -334,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rar-L7-hrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214.54272863568218" y="2069.5999999999999"/>
+            <point key="canvasLocation" x="-29" y="2118"/>
         </scene>
     </scenes>
     <resources>

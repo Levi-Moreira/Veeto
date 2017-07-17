@@ -1,0 +1,6 @@
+framework module Pods_VeetoAppUITests {
+  umbrella header "Pods-VeetoAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

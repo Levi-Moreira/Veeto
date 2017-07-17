@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BD7CD6DCA1720CDC14C6519D92ED92 /* Pods-VeetoAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4ACBDBF89A5E909491F94AFC580BCCF /* Pods-VeetoAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A91B85FB85A632E54C1F1EC5C8E73CB /* Pods-VeetoAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5641F829CD3F9BD7532BF2599D1334B /* Pods-VeetoAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA05468BD1BAB96C16C7F3C71740511 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */; };
+		4B9A75B7E3CB0453E8F0F8D413171BDD /* Pods-VeetoAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C2BEA9A62F33E969CD8FA203CB3C5 /* Pods-VeetoAppUITests-dummy.m */; };
+		72462DCD9E126353AF810095AEB05759 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */; };
+		774034F9F680AFE4751DF11492995128 /* Pods-VeetoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */; };
+		8F4998D501889354A098278D3075A3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9EF4FF66473AE1A5C86DB3FE57CF69A7 /* Pods-VeetoAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF398D32174CFEB71556EB0342D67DF /* Pods-VeetoAppTests-dummy.m */; };
+		A131E1EB1AB8867D169AC772507ABF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A2F2C1A217E357E4CE3833EE95EFA46F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AFA1A372707197E1CD4CDA5B4EBE9855 /* Pods-VeetoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C876C585EA0BF6A2FD7F710EFF9F4BDE /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */; };
+		E2CDD9EA5EAB001FC2AB168B40B4BFED /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F96266E911E9D0E28BEBE4DCD67F6E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3F26686BB11A44EBF544DEAD1B4C607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F527478B6E1BABA10F6C69B1922D1C22;
+			remoteInfo = SCLAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoApp-dummy.m"; sourceTree = "<group>"; };
+		095277666D240166534C3960AE52FA3A /* Pods-VeetoAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoApp.framework; path = "Pods-VeetoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		207B324062471960B9CB7FC81397D6A3 /* Pods-VeetoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29DA5B5DBD3F427A512DB977572EF82C /* Pods-VeetoAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoAppTests.modulemap"; sourceTree = "<group>"; };
+		2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppTests.framework; path = "Pods-VeetoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB38FC2A9ED345645BE07265987A3FD /* Pods-VeetoAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppTests-resources.sh"; sourceTree = "<group>"; };
+		42E8FD46D27C80E74CAB0A32F8620F4E /* Pods-VeetoAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppUITests-resources.sh"; sourceTree = "<group>"; };
+		4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		4FCAA752E7F2C035D5CEC0BB266D96FB /* Pods-VeetoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoApp-resources.sh"; sourceTree = "<group>"; };
+		53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoApp.release.xcconfig"; sourceTree = "<group>"; };
+		55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoApp-umbrella.h"; sourceTree = "<group>"; };
+		5AD66281FB2AFEF54C09D9B834E89C5E /* Pods-VeetoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoApp-frameworks.sh"; sourceTree = "<group>"; };
+		61EA1C4FB2FDFD2EE5B1B870B2BE4188 /* Pods-VeetoAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C4FFCE6552CB698A5B13E239207A365 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		7C440B12C9210D1B1D740A4ECEC03449 /* Pods-VeetoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VeetoAppUITests.framework; path = "Pods-VeetoAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF88B1B58F33352BFCD573AC0B1F46E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E03FC12FB4F4E4F6AA83AFDCAB9878F /* Pods-VeetoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoApp.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A822355D61955D81607E8B85DA5F164 /* Pods-VeetoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4ACBDBF89A5E909491F94AFC580BCCF /* Pods-VeetoAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		A99049A404ABBD60E075261593F6A988 /* Pods-VeetoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF4B6FFA3D0B6A109881BF6EA36D4EC0 /* Pods-VeetoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeetoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF896F4F8E84B60400CDF2970BFE1B7F /* Pods-VeetoAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB7F3CC466A1BC3994D9BCFBFB85F1B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08A45FB9EF6A5775B8EF1CCB8881351 /* Pods-VeetoAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VeetoAppUITests.modulemap"; sourceTree = "<group>"; };
+		C25C2BEA9A62F33E969CD8FA203CB3C5 /* Pods-VeetoAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoAppUITests-dummy.m"; sourceTree = "<group>"; };
+		C5641F829CD3F9BD7532BF2599D1334B /* Pods-VeetoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeetoAppTests-umbrella.h"; sourceTree = "<group>"; };
+		C73340662C71818B7358CEBFE19A408E /* Pods-VeetoAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeetoAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CB08355B506074856255238793F68803 /* Pods-VeetoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeetoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD023DDF9D51793963916D7A83BB6B38 /* Pods-VeetoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DFF398D32174CFEB71556EB0342D67DF /* Pods-VeetoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeetoAppTests-dummy.m"; sourceTree = "<group>"; };
+		ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		F95BA6C5A0E829CC57378D2E97DA1DE6 /* Pods-VeetoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeetoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BD84339E225DED064BEC08273267EB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A131E1EB1AB8867D169AC772507ABF8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495ACC521CA6F8357CDD6D2F73F51F89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4998D501889354A098278D3075A3F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8961AFD08C94547CF765425A47709CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F2C1A217E357E4CE3833EE95EFA46F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB961071BABF50A38AE20DCC3C634C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96266E911E9D0E28BEBE4DCD67F6E1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0420E484A681CBEA41CEBDE389622FD8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB31F0D5F598EA9F78BF81C73DCA8D1 /* Pods-VeetoApp */,
+				C20A84BA55F9D4A192ECA88ED81B2649 /* Pods-VeetoAppTests */,
+				1B5487266B673245710D8B87E4684630 /* Pods-VeetoAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		156A4D5D1F6DE7B422310A2120151FB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */,
+				2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */,
+				89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */,
+				64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B5487266B673245710D8B87E4684630 /* Pods-VeetoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F3CC466A1BC3994D9BCFBFB85F1B0 /* Info.plist */,
+				C08A45FB9EF6A5775B8EF1CCB8881351 /* Pods-VeetoAppUITests.modulemap */,
+				AF896F4F8E84B60400CDF2970BFE1B7F /* Pods-VeetoAppUITests-acknowledgements.markdown */,
+				61EA1C4FB2FDFD2EE5B1B870B2BE4188 /* Pods-VeetoAppUITests-acknowledgements.plist */,
+				C25C2BEA9A62F33E969CD8FA203CB3C5 /* Pods-VeetoAppUITests-dummy.m */,
+				C73340662C71818B7358CEBFE19A408E /* Pods-VeetoAppUITests-frameworks.sh */,
+				42E8FD46D27C80E74CAB0A32F8620F4E /* Pods-VeetoAppUITests-resources.sh */,
+				A4ACBDBF89A5E909491F94AFC580BCCF /* Pods-VeetoAppUITests-umbrella.h */,
+				207B324062471960B9CB7FC81397D6A3 /* Pods-VeetoAppUITests.debug.xcconfig */,
+				F95BA6C5A0E829CC57378D2E97DA1DE6 /* Pods-VeetoAppUITests.release.xcconfig */,
+			);
+			name = "Pods-VeetoAppUITests";
+			path = "Target Support Files/Pods-VeetoAppUITests";
+			sourceTree = "<group>";
+		};
+		21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */,
+				79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */,
+				42753F0DBF438AAF17062729B2173DED /* Support Files */,
+			);
+			name = SCLAlertView;
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		42753F0DBF438AAF17062729B2173DED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */,
+				ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */,
+				4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */,
+				D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */,
+				F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */,
+				780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		6DB31F0D5F598EA9F78BF81C73DCA8D1 /* Pods-VeetoApp */ = {
+			isa = PBXGroup;
+			children = (
+				6C4FFCE6552CB698A5B13E239207A365 /* Info.plist */,
+				8E03FC12FB4F4E4F6AA83AFDCAB9878F /* Pods-VeetoApp.modulemap */,
+				A99049A404ABBD60E075261593F6A988 /* Pods-VeetoApp-acknowledgements.markdown */,
+				7C440B12C9210D1B1D740A4ECEC03449 /* Pods-VeetoApp-acknowledgements.plist */,
+				00378A406D9F06F449AC7F2D1706C5FC /* Pods-VeetoApp-dummy.m */,
+				5AD66281FB2AFEF54C09D9B834E89C5E /* Pods-VeetoApp-frameworks.sh */,
+				4FCAA752E7F2C035D5CEC0BB266D96FB /* Pods-VeetoApp-resources.sh */,
+				55D6F729C845C978A209168F793C8A52 /* Pods-VeetoApp-umbrella.h */,
+				DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */,
+				55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */,
+			);
+			name = "Pods-VeetoApp";
+			path = "Target Support Files/Pods-VeetoApp";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */,
+				156A4D5D1F6DE7B422310A2120151FB4 /* Products */,
+				0420E484A681CBEA41CEBDE389622FD8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20A84BA55F9D4A192ECA88ED81B2649 /* Pods-VeetoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DF88B1B58F33352BFCD573AC0B1F46E /* Info.plist */,
+				29DA5B5DBD3F427A512DB977572EF82C /* Pods-VeetoAppTests.modulemap */,
+				CB08355B506074856255238793F68803 /* Pods-VeetoAppTests-acknowledgements.markdown */,
+				AF4B6FFA3D0B6A109881BF6EA36D4EC0 /* Pods-VeetoAppTests-acknowledgements.plist */,
+				DFF398D32174CFEB71556EB0342D67DF /* Pods-VeetoAppTests-dummy.m */,
+				095277666D240166534C3960AE52FA3A /* Pods-VeetoAppTests-frameworks.sh */,
+				3BB38FC2A9ED345645BE07265987A3FD /* Pods-VeetoAppTests-resources.sh */,
+				C5641F829CD3F9BD7532BF2599D1334B /* Pods-VeetoAppTests-umbrella.h */,
+				9A822355D61955D81607E8B85DA5F164 /* Pods-VeetoAppTests.debug.xcconfig */,
+				CD023DDF9D51793963916D7A83BB6B38 /* Pods-VeetoAppTests.release.xcconfig */,
+			);
+			name = "Pods-VeetoAppTests";
+			path = "Target Support Files/Pods-VeetoAppTests";
+			sourceTree = "<group>";
+		};
+		CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2695A7C2992060EE5F479F53D28A6AC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BD7CD6DCA1720CDC14C6519D92ED92 /* Pods-VeetoAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BCF34991746127259B5877BD118AD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA1A372707197E1CD4CDA5B4EBE9855 /* Pods-VeetoApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48D5EE9D5EA9D1024709EA956451148 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CDD9EA5EAB001FC2AB168B40B4BFED /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A4D407C8F675C5DEF27CC0D7C2176D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A91B85FB85A632E54C1F1EC5C8E73CB /* Pods-VeetoAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		74F0264AC7C07BF7277D4FFDDDA78B27 /* Pods-VeetoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65369187FBBB0DE00A6116DB2A9E6FE8 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */;
+			buildPhases = (
+				C7B70271BD424B9F44399DC1ABA4DB08 /* Sources */,
+				2BD84339E225DED064BEC08273267EB5 /* Frameworks */,
+				92BCF34991746127259B5877BD118AD7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BD0F2FFD7974DBE64445BF5E351752 /* PBXTargetDependency */,
+			);
+			name = "Pods-VeetoApp";
+			productName = "Pods-VeetoApp";
+			productReference = 0C854C42711B5285B42078B82968916C /* Pods_VeetoApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCB8262DAABDE8F59F51A5013B3AE19E /* Pods-VeetoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7E0B9057DF15B48C87AF20BD7A21D4 /* Build configuration list for PBXNativeTarget "Pods-VeetoAppUITests" */;
+			buildPhases = (
+				5083B1CD60BF4FCF28EC493F85D1F8C5 /* Sources */,
+				495ACC521CA6F8357CDD6D2F73F51F89 /* Frameworks */,
+				2695A7C2992060EE5F479F53D28A6AC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VeetoAppUITests";
+			productName = "Pods-VeetoAppUITests";
+			productReference = 89C053C9232F6EA20769F29515E02A45 /* Pods_VeetoAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0B2F4EA1526BF24EA06EE03398EA17 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				3064625EF0A3C237250D2027B59C2F79 /* Sources */,
+				BB961071BABF50A38AE20DCC3C634C90 /* Frameworks */,
+				B48D5EE9D5EA9D1024709EA956451148 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 64587D52DD89F49F8F3CCA7E92B82595 /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F80260BCAC903D06EBE672D4CEB35751 /* Pods-VeetoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA3328FB1ED8D616A1F07BC602703169 /* Build configuration list for PBXNativeTarget "Pods-VeetoAppTests" */;
+			buildPhases = (
+				8FE46E1D0565CB4B34B3C1C0CF7F8AD9 /* Sources */,
+				8961AFD08C94547CF765425A47709CAC /* Frameworks */,
+				D2A4D407C8F675C5DEF27CC0D7C2176D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VeetoAppTests";
+			productName = "Pods-VeetoAppTests";
+			productReference = 2DE60A02266DB099BB07CBCE279141B8 /* Pods_VeetoAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 156A4D5D1F6DE7B422310A2120151FB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74F0264AC7C07BF7277D4FFDDDA78B27 /* Pods-VeetoApp */,
+				F80260BCAC903D06EBE672D4CEB35751 /* Pods-VeetoAppTests */,
+				DCB8262DAABDE8F59F51A5013B3AE19E /* Pods-VeetoAppUITests */,
+				F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3064625EF0A3C237250D2027B59C2F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C876C585EA0BF6A2FD7F710EFF9F4BDE /* SCLAlertView-dummy.m in Sources */,
+				72462DCD9E126353AF810095AEB05759 /* SCLAlertView.swift in Sources */,
+				3EA05468BD1BAB96C16C7F3C71740511 /* SCLExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083B1CD60BF4FCF28EC493F85D1F8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9A75B7E3CB0453E8F0F8D413171BDD /* Pods-VeetoAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE46E1D0565CB4B34B3C1C0CF7F8AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF4FF66473AE1A5C86DB3FE57CF69A7 /* Pods-VeetoAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B70271BD424B9F44399DC1ABA4DB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774034F9F680AFE4751DF11492995128 /* Pods-VeetoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BD0F2FFD7974DBE64445BF5E351752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCLAlertView;
+			target = F527478B6E1BABA10F6C69B1922D1C22 /* SCLAlertView */;
+			targetProxy = F3F26686BB11A44EBF544DEAD1B4C607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016B8946D4AB72CD455809ED7E0F4864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1E678ABD1DE283B2B4CB3671D1E70FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD023DDF9D51793963916D7A83BB6B38 /* Pods-VeetoAppTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoAppTests/Pods-VeetoAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59F34E052344FD4840351F38FF9E9143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95BA6C5A0E829CC57378D2E97DA1DE6 /* Pods-VeetoAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoAppUITests/Pods-VeetoAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B9D5B762903E6A535D35AAFE761360B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6E4145C73787336E7E5C06A313C977E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A822355D61955D81607E8B85DA5F164 /* Pods-VeetoAppTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoAppTests/Pods-VeetoAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B212A9C3389A44064876F4B759D8884D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C3F0E2846DCB98E8E9A6919A074726 /* Pods-VeetoApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEF62037EC25EE4097455E35964A0262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE98687B8D4318EFA3E3FF082AE4A12 /* Pods-VeetoApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoApp/Pods-VeetoApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7519A14D8D31256DBF7C18C56E147F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207B324062471960B9CB7FC81397D6A3 /* Pods-VeetoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VeetoAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeetoAppUITests/Pods-VeetoAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VeetoAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65369187FBBB0DE00A6116DB2A9E6FE8 /* Build configuration list for PBXNativeTarget "Pods-VeetoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF62037EC25EE4097455E35964A0262 /* Debug */,
+				B212A9C3389A44064876F4B759D8884D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0B2F4EA1526BF24EA06EE03398EA17 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9D5B762903E6A535D35AAFE761360B /* Debug */,
+				016B8946D4AB72CD455809ED7E0F4864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7E0B9057DF15B48C87AF20BD7A21D4 /* Build configuration list for PBXNativeTarget "Pods-VeetoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7519A14D8D31256DBF7C18C56E147F1 /* Debug */,
+				59F34E052344FD4840351F38FF9E9143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA3328FB1ED8D616A1F07BC602703169 /* Build configuration list for PBXNativeTarget "Pods-VeetoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E4145C73787336E7E5C06A313C977E /* Debug */,
+				1E678ABD1DE283B2B4CB3671D1E70FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

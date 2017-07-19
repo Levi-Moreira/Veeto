@@ -11,7 +11,7 @@ import HandyJSON
 
 struct Card : HandyJSON{
     
-//    var id : Int?
+    var id : Int?
     var mainWord : String?
     var firstWord : String?
     var secondWord : String?

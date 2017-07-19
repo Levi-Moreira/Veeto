@@ -10,7 +10,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var words  = [Card]()
+    var words  = [Int : Card]()
     
     var index = 0
     
@@ -42,17 +42,20 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
 //        words.append(Card(id: 1, mainWord: "Dance", firstWord: "Ballet", secondWord: "Salsa", thirdWord: "Tango", fourthWord: "Ballroom", fifthWord: "Movement"))
-//        
+        
 //        words.append(Card(id: 2,mainWord: "Flight", firstWord: "Bird", secondWord: "Cockpit", thirdWord: "Pilot", fourthWord: "Fly", fifthWord: "Air"))
 //        
 //        words.append(Card(id: 3,mainWord: "Pen", firstWord: "Ink", secondWord: "Ballpoint", thirdWord: "Name", fourthWord: "Astronaut", fifthWord: "BIC"))
 //        
 //        words.append(Card(id: 4,mainWord: "Letter", firstWord: "Writing", secondWord: "Stamp", thirdWord: "Mail", fourthWord: "Alphabet", fifthWord: "Email"))
-//        
-// 
+        
+    
       readJson()
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,12 +64,15 @@ class GameViewController: UIViewController {
     }
     
     func loadCard(){
-        mainWord.text = words[index].mainWord
-        firstWord.text = words[index].firstWord
-        secondWord.text = words[index].secondWord
-        thirdWord.text = words[index].thirdWord
-        fourthWord.text = words[index].fourthWord
-        fifthWord.text = words[index].fifthWord
+        
+        
+        mainWord.text = words[index]?.mainWord
+        firstWord.text = words[index]?.firstWord
+        secondWord.text = words[index]?.secondWord
+        thirdWord.text = words[index]?.thirdWord
+        fourthWord.text = words[index]?.fourthWord
+        fifthWord.text = words[index]?.fifthWord
+        
     }
     
     
@@ -83,15 +89,29 @@ class GameViewController: UIViewController {
         
     }
     
+    
     private func readJson() {
+        
         do {
             if let file = Bundle.main.url(forResource: "veetoCards", withExtension: "json") {
                 let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                let jsonString = String(describing: json)
-                print(jsonString)
+                //let json = try JSONSerialization.jsonObject(with: data, options: [])
+                let jsonString = String(data: data, encoding: .utf8)
+                //print(jsonString)
+            
+                if let cards = [Card].deserialize(from: jsonString) {
+                    var dicCards = Dictionary<Int, Card>()
+
+                    dicCards = Dictionary(keyValuePairs : cards.filter{$0 != nil}.map{($0!.id!, $0!)})
+                    
+                    words = dicCards
+                    //print(dicCards)
+                }
                 
-                let cards = Dictionary<String, Card>()
+                
+                //let cards = Dictionary<String, Card>()
+                
+
             } else {
                 print("no file")
             }
@@ -99,7 +119,13 @@ class GameViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    
-    
+}
 
+extension Dictionary {
+    public init(keyValuePairs: [(Key, Value)]) {
+        self.init()
+        for pair in keyValuePairs {
+            self[pair.0] = pair.1
+        }
+    }
 }

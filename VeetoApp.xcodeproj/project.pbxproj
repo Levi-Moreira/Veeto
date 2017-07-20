@@ -24,12 +24,12 @@
 		A24A11B81F0AD19300B73D92 /* Green Gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */; };
 		A259BB581F169BC00019A7D8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A259BB571F169BC00019A7D8 /* Podfile */; };
 		A296F91F1F1FC59E00D6F7F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A296F91E1F1FC59E00D6F7F3 /* AVFoundation.framework */; };
-		A296F9291F1FCB0300D6F7F3 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A296F9231F1FCB0300D6F7F3 /* end.mp3 */; };
-		A296F92A1F1FCB0300D6F7F3 /* pass-end-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A296F9241F1FCB0300D6F7F3 /* pass-end-game.mp3 */; };
-		A296F92B1F1FCB0300D6F7F3 /* pass1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A296F9251F1FCB0300D6F7F3 /* pass1.mp3 */; };
-		A296F92C1F1FCB0300D6F7F3 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A296F9261F1FCB0300D6F7F3 /* start.mp3 */; };
-		A296F92D1F1FCB0300D6F7F3 /* tic-tac.wav in Resources */ = {isa = PBXBuildFile; fileRef = A296F9271F1FCB0300D6F7F3 /* tic-tac.wav */; };
-		A296F92F1F1FEAFE00D6F7F3 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = A296F92E1F1FEAFE00D6F7F3 /* correct.wav */; };
+		A2AD337A1F211D52008EDCA4 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33741F211D52008EDCA4 /* correct.wav */; };
+		A2AD337B1F211D52008EDCA4 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33751F211D52008EDCA4 /* end.mp3 */; };
+		A2AD337C1F211D52008EDCA4 /* pass-end-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33761F211D52008EDCA4 /* pass-end-game.mp3 */; };
+		A2AD337D1F211D52008EDCA4 /* pass1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33771F211D52008EDCA4 /* pass1.mp3 */; };
+		A2AD337E1F211D52008EDCA4 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33781F211D52008EDCA4 /* start.mp3 */; };
+		A2AD337F1F211D52008EDCA4 /* tic-tac.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2AD33791F211D52008EDCA4 /* tic-tac.wav */; };
 		A2C7C37A1F181B1000D001FE /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7C3781F181B1000D001FE /* Card+CoreDataClass.swift */; };
 		A2C7C37B1F181B1000D001FE /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7C3791F181B1000D001FE /* Card+CoreDataProperties.swift */; };
 		A2FC5F031F0D42010050E629 /* SingleModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */; };
@@ -83,12 +83,12 @@
 		A24A11B71F0AD19300B73D92 /* Green Gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green Gradient.jpg"; sourceTree = "<group>"; };
 		A259BB571F169BC00019A7D8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A296F91E1F1FC59E00D6F7F3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A296F9231F1FCB0300D6F7F3 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../sounds/end.mp3; sourceTree = "<group>"; };
-		A296F9241F1FCB0300D6F7F3 /* pass-end-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "pass-end-game.mp3"; path = "../sounds/pass-end-game.mp3"; sourceTree = "<group>"; };
-		A296F9251F1FCB0300D6F7F3 /* pass1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pass1.mp3; path = ../sounds/pass1.mp3; sourceTree = "<group>"; };
-		A296F9261F1FCB0300D6F7F3 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../sounds/start.mp3; sourceTree = "<group>"; };
-		A296F9271F1FCB0300D6F7F3 /* tic-tac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "tic-tac.wav"; path = "../sounds/tic-tac.wav"; sourceTree = "<group>"; };
-		A296F92E1F1FEAFE00D6F7F3 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = ../sounds/correct.wav; sourceTree = "<group>"; };
+		A2AD33741F211D52008EDCA4 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = ../../../Downloads/sounds/correct.wav; sourceTree = "<group>"; };
+		A2AD33751F211D52008EDCA4 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../../../Downloads/sounds/end.mp3; sourceTree = "<group>"; };
+		A2AD33761F211D52008EDCA4 /* pass-end-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "pass-end-game.mp3"; path = "../../../Downloads/sounds/pass-end-game.mp3"; sourceTree = "<group>"; };
+		A2AD33771F211D52008EDCA4 /* pass1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pass1.mp3; path = ../../../Downloads/sounds/pass1.mp3; sourceTree = "<group>"; };
+		A2AD33781F211D52008EDCA4 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../Downloads/sounds/start.mp3; sourceTree = "<group>"; };
+		A2AD33791F211D52008EDCA4 /* tic-tac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "tic-tac.wav"; path = "../../../Downloads/sounds/tic-tac.wav"; sourceTree = "<group>"; };
 		A2C7C3781F181B1000D001FE /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataClass.swift"; path = "VeetoApp/Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A2C7C3791F181B1000D001FE /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataProperties.swift"; path = "VeetoApp/Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A2FC5F021F0D42010050E629 /* SingleModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleModeViewController.swift; sourceTree = "<group>"; };
@@ -226,12 +226,12 @@
 		A296F9211F1FCA8900D6F7F3 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				A296F92E1F1FEAFE00D6F7F3 /* correct.wav */,
-				A296F9231F1FCB0300D6F7F3 /* end.mp3 */,
-				A296F9241F1FCB0300D6F7F3 /* pass-end-game.mp3 */,
-				A296F9251F1FCB0300D6F7F3 /* pass1.mp3 */,
-				A296F9261F1FCB0300D6F7F3 /* start.mp3 */,
-				A296F9271F1FCB0300D6F7F3 /* tic-tac.wav */,
+				A2AD33741F211D52008EDCA4 /* correct.wav */,
+				A2AD33751F211D52008EDCA4 /* end.mp3 */,
+				A2AD33761F211D52008EDCA4 /* pass-end-game.mp3 */,
+				A2AD33771F211D52008EDCA4 /* pass1.mp3 */,
+				A2AD33781F211D52008EDCA4 /* start.mp3 */,
+				A2AD33791F211D52008EDCA4 /* tic-tac.wav */,
 			);
 			name = Sound;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				TargetAttributes = {
 					A24A11821F0ACD9500B73D92 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YE6GS5VH8M;
+						DevelopmentTeam = 6MNS953WHJ;
 						ProvisioningStyle = Automatic;
 					};
 					A24A11991F0ACD9500B73D92 = {
@@ -354,16 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A259BB581F169BC00019A7D8 /* Podfile in Resources */,
-				A296F92A1F1FCB0300D6F7F3 /* pass-end-game.mp3 in Resources */,
+				A2AD337C1F211D52008EDCA4 /* pass-end-game.mp3 in Resources */,
 				A24A11B81F0AD19300B73D92 /* Green Gradient.jpg in Resources */,
-				A296F92D1F1FCB0300D6F7F3 /* tic-tac.wav in Resources */,
-				A296F92F1F1FEAFE00D6F7F3 /* correct.wav in Resources */,
+				A2AD337F1F211D52008EDCA4 /* tic-tac.wav in Resources */,
 				A24A11941F0ACD9500B73D92 /* LaunchScreen.storyboard in Resources */,
-				A296F9291F1FCB0300D6F7F3 /* end.mp3 in Resources */,
-				A296F92B1F1FCB0300D6F7F3 /* pass1.mp3 in Resources */,
+				A2AD337B1F211D52008EDCA4 /* end.mp3 in Resources */,
+				A2AD337D1F211D52008EDCA4 /* pass1.mp3 in Resources */,
 				A24A11911F0ACD9500B73D92 /* Assets.xcassets in Resources */,
-				A296F92C1F1FCB0300D6F7F3 /* start.mp3 in Resources */,
+				A2AD337E1F211D52008EDCA4 /* start.mp3 in Resources */,
 				A24A118C1F0ACD9500B73D92 /* Main.storyboard in Resources */,
+				A2AD337A1F211D52008EDCA4 /* correct.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,11 +689,11 @@
 			baseConfigurationReference = 594809CB36C97B8B749016C7 /* Pods-VeetoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YE6GS5VH8M;
+				DEVELOPMENT_TEAM = 6MNS953WHJ;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE222.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -705,11 +705,11 @@
 			baseConfigurationReference = 26B229150EBC2C853DBA2AD4 /* Pods-VeetoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YE6GS5VH8M;
+				DEVELOPMENT_TEAM = 6MNS953WHJ;
 				INFOPLIST_FILE = VeetoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IFCE222.VeetoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IFCE.VeetoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

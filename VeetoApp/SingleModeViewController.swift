@@ -44,6 +44,8 @@ class SingleModeViewController: UIViewController {
     var correctSound: AVAudioPlayer!
     var passSound: AVAudioPlayer!
     var tictacSound: AVAudioPlayer!
+	
+	 var queue = OperationQueue()
     
     
     override func viewDidLoad() {
@@ -115,7 +117,11 @@ class SingleModeViewController: UIViewController {
         correctSound.stop()
         passSound.stop()
         tictacSound.stop()
+		time.invalidate()
+		self.queue.cancelAllOperations()
         self.player = nil
+		
+		
     }
 
     
@@ -134,7 +140,7 @@ class SingleModeViewController: UIViewController {
             
             motionManager.deviceMotionUpdateInterval = 0.1;
             
-            let queue = OperationQueue()
+//			self.queue = OperationQueue()
             motionManager.startDeviceMotionUpdates(to: queue, withHandler: { [weak self] (motion, error) -> Void in
                 
                 if let attitude = motion?.attitude {

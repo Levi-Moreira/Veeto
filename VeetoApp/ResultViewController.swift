@@ -13,11 +13,10 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
 	@IBOutlet weak var mainView: UIView!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

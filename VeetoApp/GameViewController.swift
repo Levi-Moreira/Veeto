@@ -33,8 +33,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var fifthWord: UILabel!
     
    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

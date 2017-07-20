@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 
 class FinalResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -15,6 +15,9 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
     
     var words  = [Card]()
     var index = 0
+    
+    var player: AVAudioPlayer!
+    var endSound: AVAudioPlayer!
     
     var cardPassed = [Int] ()
     var cardCorrect = [Int] ()
@@ -65,12 +68,23 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
             card4.fifthWord = "Email"
             words.append(card4)
         
-        // Do any additional setup after loading the view.
+            // Sound end
+            let pathEnd = Bundle.main.path(forResource: "end", ofType: "mp3")!
+            let urlEnd = URL(fileURLWithPath: pathEnd)
+            do {
+                endSound = try AVAudioPlayer(contentsOf: urlEnd)
+            } catch {
+                print("Error of End")
+            }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        endSound.stop()
     }
     
     @IBAction func didTapMenuButton(_ sender: UIBarButtonItem) {
@@ -107,9 +121,12 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
             cell.backgroundColor = UIColor.green
         }
         
-        
+        player = self.endSound
+        endSound.prepareToPlay()
+        endSound.play()
         
         return cell
+        
     }
     
     

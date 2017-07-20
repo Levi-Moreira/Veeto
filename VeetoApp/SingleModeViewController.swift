@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import AVFoundation
 
 class SingleModeViewController: UIViewController {
 
@@ -31,21 +32,66 @@ class SingleModeViewController: UIViewController {
 	var time = Timer()
     
     
-	var gameCounter = 10
+    var gameCounter = 30
     var startGameCounter = 3
     
     //Keeps the ids of the correct cards and the passed cards
     var cardPassed = [Int] ()
     var cardCorrect = [Int] ()
     
+    var player: AVAudioPlayer!
+    var startSound: AVAudioPlayer!
+    var correctSound: AVAudioPlayer!
+    var passSound: AVAudioPlayer!
+    var tictacSound: AVAudioPlayer!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Sound Start
+        let pathStart = Bundle.main.path(forResource: "start", ofType: "mp3")!
+        let urlStart = URL(fileURLWithPath: pathStart)
+        do {
+            startSound = try AVAudioPlayer(contentsOf: urlStart)
+        } catch {
+            print("Error of Start")
+        }
+        
+        // Sound Correct
+        let pathCorrect = Bundle.main.path(forResource: "correct", ofType: "wav")!
+        let urlCorrect = URL(fileURLWithPath: pathCorrect)
+        do {
+            correctSound = try AVAudioPlayer(contentsOf: urlCorrect)
+        } catch {
+            print("Error of Correct")
+        }
+        
+        // Sound Pass
+        let pathPass = Bundle.main.path(forResource: "pass1", ofType: "mp3")!
+        let urlPass = URL(fileURLWithPath: pathPass)
+        do {
+            passSound = try AVAudioPlayer(contentsOf: urlPass)
+        } catch {
+            print("Error of Pass")
+        }
+        
+        // Sound Tic Tac
+        let pathTictac = Bundle.main.path(forResource: "tic-tac", ofType: "wav")!
+        let urlTictac = URL(fileURLWithPath: pathTictac)
+        do {
+            tictacSound = try AVAudioPlayer(contentsOf: urlTictac)
+        } catch {
+            print("Error of Tic Tac")
+        }
+        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
         //set up game time
-        gameCounter = 10
+        gameCounter = 30
         
         //3 seconds for the game to start
         startGameCounter = 3
@@ -62,16 +108,21 @@ class SingleModeViewController: UIViewController {
         timer.title = String(startGameCounter)+"s"
     }
     
+    
     override func viewWillDisappear(_ animated: Bool) {
         motionManager.stopDeviceMotionUpdates()
+        startSound.stop()
+        correctSound.stop()
+        passSound.stop()
+        tictacSound.stop()
+        self.player = nil
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     
     
     /*starts and configure gyroscope for detecting foward tilt and backward tilt*/
@@ -98,11 +149,13 @@ class SingleModeViewController: UIViewController {
                             let cardId = self?.gameViewController?.currentCardId
                             
                             self?.gameViewController?.didChangeCard()
-                            
                             didEnterCorrect = true
                             
                             self?.cardCorrect.append(Int(cardId!))
                             
+                            self?.player = self?.correctSound
+                            self?.correctSound.prepareToPlay()
+                            self?.correctSound.play()
                         }
                         
                         if(angle < 60 && !didEnterPass){
@@ -116,6 +169,10 @@ class SingleModeViewController: UIViewController {
                             didEnterPass = true
                             self?.cardPassed.append(Int(cardId!))
                             
+                            self?.player = self?.passSound
+                            self?.passSound.prepareToPlay()
+                            self?.passSound.play()
+        
                         }
                         
                         if(angle > 60 && angle < 115){
@@ -131,15 +188,18 @@ class SingleModeViewController: UIViewController {
             })
         }
     }
-
+  
     
-	func startTimer(){
+    func startTimer(){
 		let updateSelector : Selector = #selector(SingleModeViewController.updateTime)
 		time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: updateSelector, userInfo: nil, repeats: true)
+        
+        self.player = startSound
+        startSound.prepareToPlay()
+        startSound.play()
 	}
     
     
-	
 	func updateTime(){
         startGameCounter = startGameCounter - 1
         
@@ -157,6 +217,13 @@ class SingleModeViewController: UIViewController {
             }
             else {
                 timer.title = String(gameCounter)+"s"
+                
+                // Sound Tic Tac
+                if(gameCounter == 10) {
+                    player = self.tictacSound
+                    tictacSound.prepareToPlay()
+                    tictacSound.play()
+                }
             }
         }
         else {

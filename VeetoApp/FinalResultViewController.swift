@@ -25,15 +25,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         collectionView.dataSource = self
         collectionView.delegate = self
         
-//            words.append(Card(id: 1, mainWord: "Dance", firstWord: "Ballet", secondWord: "Salsa", thirdWord: "Tango", fourthWord: "Ballroom", fifthWord: "Movement"))
-//            
-//            words.append(Card(id: 2,mainWord: "Flight", firstWord: "Bird", secondWord: "Cockpit", thirdWord: "Pilot", fourthWord: "Fly", fifthWord: "Air"))
-//            
-//            words.append(Card(id: 3,mainWord: "Pen", firstWord: "Ink", secondWord: "Ballpoint", thirdWord: "Name", fourthWord: "Astronaut", fifthWord: "BIC"))
-//            
-//            words.append(Card(id: 4,mainWord: "Letter", firstWord: "Writing", secondWord: "Stamp", thirdWord: "Mail", fourthWord: "Alphabet", fifthWord: "Email"))
-//            
-//            
+			
         
         // Do any additional setup after loading the view.
     }

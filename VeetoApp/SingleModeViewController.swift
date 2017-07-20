@@ -111,27 +111,31 @@ class SingleModeViewController: UIViewController {
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGameWin()
                             
-                            let cardId = self?.gameViewController?.currentCardId
-                            
+//                            let cardId = self?.gameViewController?.currentCardId
+							
+							CardProvider.sharedInstance.correctCard()
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterCorrect = true
+							
+							
                             
-                            self?.cardCorrect.append(Int(cardId!))
-                            
+//                            self?.cardCorrect.append(Int(cardId!))
+							
                         }
                         
                         if(angle < 60 && !didEnterPass){
                             self?.GameView.isHidden = true
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGamePass()
-                            let cardId = self?.gameViewController?.currentCardId
-                            
+//                            let cardId = self?.gameViewController?.currentCardId
+							
+							CardProvider.sharedInstance.passCard()
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterPass = true
-                            self?.cardPassed.append(Int(cardId!))
-                            
+//                            self?.cardPassed.append(Int(cardId!))
+							
                         }
                         
                         if(angle > 60 && angle < 115){
@@ -161,7 +165,7 @@ class SingleModeViewController: UIViewController {
         
         if (startGameCounter == 0) {
             startGyro()
-            self.gameViewController?.loadCard()
+            self.gameViewController?.loadCard(card: CardProvider.sharedInstance.provideCard())
         }
         if (startGameCounter <= 0) {
             gameCounter = gameCounter - 1

@@ -44,11 +44,11 @@ class SingleModeViewController: UIViewController {
     var cardPassed = [Int] ()
     var cardCorrect = [Int] ()
     
-    var player: AVAudioPlayer!
-    var startSound: AVAudioPlayer!
-    var correctSound: AVAudioPlayer!
-    var passSound: AVAudioPlayer!
-    var tictacSound: AVAudioPlayer!
+    var player: AVAudioPlayer?
+    var startSound: AVAudioPlayer?
+    var correctSound: AVAudioPlayer?
+    var passSound: AVAudioPlayer?
+    var tictacSound: AVAudioPlayer?
 	
 	 var queue = OperationQueue()
     
@@ -56,47 +56,52 @@ class SingleModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        // Sound Start
-        let pathStart = Bundle.main.path(forResource: "start", ofType: "mp3")!
-        let urlStart = URL(fileURLWithPath: pathStart)
-        do {
-            startSound = try AVAudioPlayer(contentsOf: urlStart)
-        } catch {
-            print("Error of Start")
-        }
-        
-        // Sound Correct
-        let pathCorrect = Bundle.main.path(forResource: "correct", ofType: "wav")!
-        let urlCorrect = URL(fileURLWithPath: pathCorrect)
-        do {
-            correctSound = try AVAudioPlayer(contentsOf: urlCorrect)
-        } catch {
-            print("Error of Correct")
-        }
-        
-        // Sound Pass
-        let pathPass = Bundle.main.path(forResource: "pass1", ofType: "mp3")!
-        let urlPass = URL(fileURLWithPath: pathPass)
-        do {
-            passSound = try AVAudioPlayer(contentsOf: urlPass)
-        } catch {
-            print("Error of Pass")
-        }
-        
-        // Sound Tic Tac
-        let pathTictac = Bundle.main.path(forResource: "tic-tac", ofType: "wav")!
-        let urlTictac = URL(fileURLWithPath: pathTictac)
-        do {
-            tictacSound = try AVAudioPlayer(contentsOf: urlTictac)
-        } catch {
-            print("Error of Tic Tac")
-        }
-        
+		if(preferences.bool(forKey: soundSettings)){
+			// Sound Start
+			let pathStart = Bundle.main.path(forResource: "start", ofType: "mp3")!
+			let urlStart = URL(fileURLWithPath: pathStart)
+			do {
+				startSound = try AVAudioPlayer(contentsOf: urlStart)
+			} catch {
+				print("Error of Start")
+			}
+			
+			// Sound Correct
+			let pathCorrect = Bundle.main.path(forResource: "correct", ofType: "wav")!
+			let urlCorrect = URL(fileURLWithPath: pathCorrect)
+			do {
+				correctSound = try AVAudioPlayer(contentsOf: urlCorrect)
+			} catch {
+				print("Error of Correct")
+			}
+			
+			// Sound Pass
+			let pathPass = Bundle.main.path(forResource: "pass1", ofType: "mp3")!
+			let urlPass = URL(fileURLWithPath: pathPass)
+			do {
+				passSound = try AVAudioPlayer(contentsOf: urlPass)
+			} catch {
+				print("Error of Pass")
+			}
+			
+			// Sound Tic Tac
+			let pathTictac = Bundle.main.path(forResource: "tic-tac", ofType: "wav")!
+			let urlTictac = URL(fileURLWithPath: pathTictac)
+			do {
+				tictacSound = try AVAudioPlayer(contentsOf: urlTictac)
+			} catch {
+				print("Error of Tic Tac")
+			}
+			
+		}
+		
+		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		self.navigationController?.navigationBar.shadowImage = UIImage()
+		self.navigationController?.navigationBar.isTranslucent = true
 
     }
-    
-    
+	
+	
     override func viewWillAppear(_ animated: Bool) {
         CardProvider.sharedInstance.restoreProvider()
         //set up game time
@@ -113,7 +118,9 @@ class SingleModeViewController: UIViewController {
             gameCounter = 60
         }
 		
-		gameCounter = 10
+		//gameCounter = 15
+		
+		
 
         
         //3 seconds for the game to start
@@ -134,10 +141,10 @@ class SingleModeViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         motionManager.stopDeviceMotionUpdates()
-        startSound.stop()
-        correctSound.stop()
-        passSound.stop()
-        tictacSound.stop()
+        startSound?.stop()
+        correctSound?.stop()
+        passSound?.stop()
+        tictacSound?.stop()
 		time.invalidate()
 		self.queue.cancelAllOperations()
         self.player = nil
@@ -177,8 +184,8 @@ class SingleModeViewController: UIViewController {
 							
 							CardProvider.sharedInstance.correctCard()
 							self?.player = self?.correctSound
-							self?.correctSound.prepareToPlay()
-							self?.correctSound.play()
+							self?.correctSound?.prepareToPlay()
+							self?.correctSound?.play()
                             self?.gameViewController?.didChangeCard()
                             didEnterCorrect = true
 							
@@ -194,8 +201,8 @@ class SingleModeViewController: UIViewController {
 							
 							CardProvider.sharedInstance.passCard()
 							self?.player = self?.passSound
-							self?.passSound.prepareToPlay()
-							self?.passSound.play()
+							self?.passSound?.prepareToPlay()
+							self?.passSound?.play()
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterPass = true
@@ -222,8 +229,8 @@ class SingleModeViewController: UIViewController {
 		time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: updateSelector, userInfo: nil, repeats: true)
         
         self.player = startSound
-        startSound.prepareToPlay()
-        startSound.play()
+        startSound?.prepareToPlay()
+        startSound?.play()
 	}
     
     
@@ -248,8 +255,8 @@ class SingleModeViewController: UIViewController {
                 // Sound Tic Tac
                 if(gameCounter == 10) {
                     player = self.tictacSound
-                    tictacSound.prepareToPlay()
-                    tictacSound.play()
+                    tictacSound?.prepareToPlay()
+                    tictacSound?.play()
                 }
             }
         }

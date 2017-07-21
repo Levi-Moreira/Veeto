@@ -13,10 +13,13 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
 	
-	var player: AVAudioPlayer!
-	var endSound: AVAudioPlayer!
+	var player: AVAudioPlayer?
+	var endSound: AVAudioPlayer?
 	
-
+	let preferences = UserDefaults.standard
+	
+	let soundSettings = "soundSettings"
+	
     var words  = CardProvider.sharedInstance.retrievePlayedCards()
    
 
@@ -33,14 +36,25 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 			
         
             // Sound end
-            let pathEnd = Bundle.main.path(forResource: "end", ofType: "mp3")!
-            let urlEnd = URL(fileURLWithPath: pathEnd)
-            do {
-                endSound = try AVAudioPlayer(contentsOf: urlEnd)
-            } catch {
-                print("Error of End")
-            }
+			
+			if(preferences.bool(forKey: soundSettings)){
+				let pathEnd = Bundle.main.path(forResource: "end", ofType: "mp3")!
+				let urlEnd = URL(fileURLWithPath: pathEnd)
+				do {
+					endSound = try AVAudioPlayer(contentsOf: urlEnd)
+				} catch {
+					print("Error of End")
+				}
+			}
+
     }
+	
+	
+	override func viewWillAppear(_ animated: Bool) {
+		player = self.endSound
+		endSound?.prepareToPlay()
+		endSound?.play()
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,7 +62,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        endSound.stop()
+        endSound?.stop()
     }
     
     @IBAction func didTapMenuButton(_ sender: UIBarButtonItem) {
@@ -78,17 +92,15 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         
         
         if(CardProvider.sharedInstance.wrongCards.contains(Int(words[indexPath.row].id!)) ){
-            cell.backgroundColor = UIColor.red
+            cell.backgroundColor = UIColor(rgb : 0xb30000)
         }
         
         if(CardProvider.sharedInstance.correctCards.contains(Int(words[indexPath.row].id!)) ){
-            cell.backgroundColor = UIColor.green
+            cell.backgroundColor = UIColor(rgb : 0x489F00)
         }
 
         
-        player = self.endSound
-        endSound.prepareToPlay()
-        endSound.play()
+
 
         
         return cell

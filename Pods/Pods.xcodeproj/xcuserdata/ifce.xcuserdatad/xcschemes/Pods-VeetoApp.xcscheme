@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74F0264AC7C07BF7277D4FFDDDA78B27"
+               BlueprintIdentifier = "7C560F348F787B578F7C167C39A9D791"
                BuildableName = "Pods_VeetoApp.framework"
                BlueprintName = "Pods-VeetoApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74F0264AC7C07BF7277D4FFDDDA78B27"
+            BlueprintIdentifier = "7C560F348F787B578F7C167C39A9D791"
             BuildableName = "Pods_VeetoApp.framework"
             BlueprintName = "Pods-VeetoApp"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -25,6 +25,11 @@ class SingleModeViewController: UIViewController {
 
     weak var gameViewController : GameViewController?
     
+    let preferences = UserDefaults.standard
+    
+    let soundSettings = "soundSettings"
+    let timeSettings = "timeSettings"
+    
     
     /*Start up CoreMotion manager*/
     var motionManager = CMMotionManager()
@@ -50,6 +55,7 @@ class SingleModeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         // Sound Start
         let pathStart = Bundle.main.path(forResource: "start", ofType: "mp3")!
@@ -87,13 +93,28 @@ class SingleModeViewController: UIViewController {
             print("Error of Tic Tac")
         }
         
+
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        CardProvider.sharedInstance.restoreProvider()
         //set up game time
-        gameCounter = 30
+
+        
+        switch preferences.integer(forKey: timeSettings) {
+        case 0:
+            gameCounter = 60
+        case 1:
+            gameCounter = 90
+        case 2:
+            gameCounter = 120
+        default:
+            gameCounter = 60
+        }
+		
+		gameCounter = 10
+
         
         //3 seconds for the game to start
         startGameCounter = 3
@@ -152,33 +173,33 @@ class SingleModeViewController: UIViewController {
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGameWin()
                             
-                            let cardId = self?.gameViewController?.currentCardId
-                            
+//                            let cardId = self?.gameViewController?.currentCardId
+							
+							CardProvider.sharedInstance.correctCard()
+							self?.player = self?.correctSound
+							self?.correctSound.prepareToPlay()
+							self?.correctSound.play()
                             self?.gameViewController?.didChangeCard()
                             didEnterCorrect = true
-                            
-                            self?.cardCorrect.append(Int(cardId!))
-                            
-                            self?.player = self?.correctSound
-                            self?.correctSound.prepareToPlay()
-                            self?.correctSound.play()
+							
+							
+							
                         }
                         
                         if(angle < 60 && !didEnterPass){
                             self?.GameView.isHidden = true
                             self?.ResultView.isHidden = false
                             self?.resultViewController?.didGamePass()
-                            let cardId = self?.gameViewController?.currentCardId
-                            
+//                            let cardId = self?.gameViewController?.currentCardId
+							
+							CardProvider.sharedInstance.passCard()
+							self?.player = self?.passSound
+							self?.passSound.prepareToPlay()
+							self?.passSound.play()
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterPass = true
-                            self?.cardPassed.append(Int(cardId!))
-                            
-                            self?.player = self?.passSound
-                            self?.passSound.prepareToPlay()
-                            self?.passSound.play()
-        
+
                         }
                         
                         if(angle > 60 && angle < 115){
@@ -211,7 +232,7 @@ class SingleModeViewController: UIViewController {
         
         if (startGameCounter == 0) {
             startGyro()
-            self.gameViewController?.loadCard()
+            self.gameViewController?.loadCard(card: CardProvider.sharedInstance.provideCard())
         }
         if (startGameCounter <= 0) {
             gameCounter = gameCounter - 1
@@ -263,9 +284,9 @@ class SingleModeViewController: UIViewController {
         //final result will appear, set variables needed for presenting the end game
         if(segue.identifier == "finalResultSegue"){
             let finalResultViewController = segue.destination as! FinalResultViewController
-            
-            finalResultViewController.cardPassed = cardPassed
-            finalResultViewController.cardCorrect = cardCorrect
+//            
+//            finalResultViewController.cardPassed = cardPassed
+//            finalResultViewController.cardCorrect = cardCorrect
         }
     }
 

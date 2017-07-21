@@ -45,10 +45,11 @@ class SingleModeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        CardProvider.sharedInstance.restoreProvider()
         //set up game time
         
         switch preferences.integer(forKey: timeSettings) {
@@ -61,7 +62,8 @@ class SingleModeViewController: UIViewController {
         default:
             gameCounter = 60
         }
-        
+		
+		gameCounter = 10
         
         //3 seconds for the game to start
         startGameCounter = 3
@@ -210,9 +212,9 @@ class SingleModeViewController: UIViewController {
         //final result will appear, set variables needed for presenting the end game
         if(segue.identifier == "finalResultSegue"){
             let finalResultViewController = segue.destination as! FinalResultViewController
-            
-            finalResultViewController.cardPassed = cardPassed
-            finalResultViewController.cardCorrect = cardCorrect
+//            
+//            finalResultViewController.cardPassed = cardPassed
+//            finalResultViewController.cardCorrect = cardCorrect
         }
     }
 

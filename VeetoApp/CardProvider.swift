@@ -12,13 +12,13 @@ class CardProvider {
 	
 	private var words = [Int : Card]()
 	
-	private var playedCardsId = [Int]()
+	 public var playedCardsId = [Int]()
 	
 	private let cardsNumber = 100
 	
-	private var correctCards = [Int]()
+	 public var correctCards = [Int]()
 	
-	private var wrongCards = [Int]()
+	 public var wrongCards = [Int]()
 	
 	private var currentCard : Card?
 	
@@ -36,6 +36,7 @@ class CardProvider {
 	func restoreProvider(){
 		correctCards.removeAll()
 		wrongCards.removeAll()
+		playedCardsId.removeAll()
 	}
 	
 	func provideCard() -> Card{
@@ -51,7 +52,7 @@ class CardProvider {
 		
 		if let card = words[Int(randomNum)]{
 			currentCard = card
-			playedCardsId.append(Int(randomNum))
+			
 			return card
 		}
 		
@@ -63,6 +64,8 @@ class CardProvider {
 		if let card = currentCard{
 			if let id = card.id{
 				wrongCards.append(id)
+				playedCardsId.append(id)
+				
 			}
 		}
 	}
@@ -71,8 +74,25 @@ class CardProvider {
 		if let card = currentCard{
 			if let id = card.id{
 				correctCards.append(id)
+				playedCardsId.append(id)
+				
 			}
 		}
+	}
+	
+	
+	func findCardBy(id : Int) ->Card{
+		return words[id]!
+	}
+	
+	func retrievePlayedCards() -> [Card]{
+		var cards = [Card]()
+		
+		for id in playedCardsId{
+			cards.append(findCardBy(id: id))
+		}
+		
+		return cards
 	}
 	
 	

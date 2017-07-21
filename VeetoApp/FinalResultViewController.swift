@@ -13,17 +13,17 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var words  = [Card]()
-    var index = 0
-    
-    var cardPassed = [Int] ()
-    var cardCorrect = [Int] ()
+    var words  = CardProvider.sharedInstance.retrievePlayedCards()
+   
     
         override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.dataSource = self
         collectionView.delegate = self
+			
+		
+//			print(words)
         
 			
         
@@ -46,7 +46,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (cardPassed.count + cardCorrect.count)
+        return (words.count)
     }
     
     
@@ -61,14 +61,14 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         cell.fifthWord.text = words[indexPath.row].fifthWord
         
         
-//        if(cardPassed.contains(Int(words[indexPath.row].id)) ){
-//            cell.backgroundColor = UIColor.red
-//        }
-//        
-//        if(cardCorrect.contains(Int(words[indexPath.row].id)) ){
-//            cell.backgroundColor = UIColor.green
-//        }
+        if(CardProvider.sharedInstance.wrongCards.contains(Int(words[indexPath.row].id!)) ){
+            cell.backgroundColor = UIColor.red
+        }
         
+        if(CardProvider.sharedInstance.correctCards.contains(Int(words[indexPath.row].id!)) ){
+            cell.backgroundColor = UIColor.green
+        }
+		
         
         
         return cell

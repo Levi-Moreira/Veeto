@@ -10,18 +10,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-//    var words  = [Int : Card]()
-	
-    var index = 0
-    
-    var currentCard = (0, Card())
-    
-    var currentCardId : Int {
-        get {
-            return currentCard.0
-        }
-    }
-    
+//    var words  = [Int : Card](
     
     
     
@@ -42,10 +31,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-//		words = JsonHelper().readJson()
-		
-    
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +41,6 @@ class GameViewController: UIViewController {
     
 	func loadCard(card : Card){
 		
-        
         mainWord.text = card.mainWord
         firstWord.text = card.firstWord
         secondWord.text = card.secondWord

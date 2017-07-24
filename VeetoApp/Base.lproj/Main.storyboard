@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0MS-UJ-oXb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0MS-UJ-oXb">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -44,9 +44,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoBack" translatesAutoresizingMaskIntoConstraints="NO" id="9XR-Ad-6hA">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-2z-2Ee">
                                 <rect key="frame" x="42" y="174" width="77" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Single Play Mode">
                                     <color key="titleColor" red="0.90980392160000001" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,6 +63,7 @@
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GwK-IO-dHV">
                                 <rect key="frame" x="456" y="169" width="92" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-23" maxY="0.0"/>
@@ -71,13 +77,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iw6-Os-h4y">
                                 <rect key="frame" x="256" y="174" width="83" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Multi-Play Mode">
                                     <color key="titleColor" red="0.90980392160000001" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.90980392160000001" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-KY-ATt">
-                                <rect key="frame" x="113" y="57" width="440" height="87"/>
+                                <rect key="frame" x="113" y="57" width="440" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -154,17 +161,30 @@
                                 <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle_orange" translatesAutoresizingMaskIntoConstraints="NO" id="YR0-xK-sny">
+                                <rect key="frame" x="283" y="40" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9h-jl-HLg">
+                                <rect key="frame" x="310" y="73" width="45" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="circleOrange" destination="YR0-xK-sny" id="Efj-o6-tqC"/>
                         <outlet property="mainView" destination="XeR-g3-O7h" id="1vI-9H-wnH"/>
                         <outlet property="statusLabel" destination="Gch-fN-9PJ" id="PUV-kv-N1U"/>
+                        <outlet property="timer" destination="c9h-jl-HLg" id="KYN-Lw-sPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2b-WM-zaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1343.4782608695652" y="2073.5999999999999"/>
+            <point key="canvasLocation" x="-1343.4782608695652" y="2072.8000000000002"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="T28-FV-May">
@@ -178,6 +198,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoBack" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-2B-HIn">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="roxoBranco" translatesAutoresizingMaskIntoConstraints="NO" id="Jrc-jy-9DO">
                                 <rect key="frame" x="189" y="37" width="289" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -224,23 +248,46 @@
                                 <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle_purple" translatesAutoresizingMaskIntoConstraints="NO" id="f3D-gP-7hI">
+                                <rect key="frame" x="567" y="-3" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSU-TW-Kwx">
+                                <rect key="frame" x="596" y="35" width="43" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f3-HW-dXR">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_purple"/>
+                                <connections>
+                                    <action selector="didTabBack:" destination="hpM-0P-IGI" eventType="touchUpInside" id="due-IP-0Z6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="backImage" destination="2f3-HW-dXR" id="rjP-cw-AiP"/>
+                        <outlet property="bolImage" destination="f3D-gP-7hI" id="AbB-20-Apw"/>
                         <outlet property="fifthWord" destination="9dv-B9-fcp" id="2pP-Yy-5Pn"/>
                         <outlet property="firstWord" destination="Sb5-Lw-JFD" id="ck5-di-oKU"/>
                         <outlet property="fourthWord" destination="1Yz-VD-tcn" id="SNq-yF-xvp"/>
+                        <outlet property="mainCard" destination="Jrc-jy-9DO" id="xU8-Ng-V4g"/>
                         <outlet property="mainWord" destination="eMd-Mc-pjZ" id="IH4-XM-Qou"/>
                         <outlet property="secondWord" destination="9cA-PZ-QpD" id="wG2-2v-AM6"/>
                         <outlet property="thirdWord" destination="Ogd-Dw-kGy" id="Skk-Gt-V6M"/>
+                        <outlet property="timer" destination="RSU-TW-Kwx" id="QML-TP-oYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dae-lK-EGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-684.10794602698661" y="2117.5999999999999"/>
         </scene>
-        <!--Title-->
+        <!--Final Result View Controller-->
         <scene sceneID="nSP-ml-gR2">
             <objects>
                 <viewController id="7yd-Kn-jCf" customClass="FinalResultViewController" customModule="VeetoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -252,76 +299,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBx-yb-65l">
-                                <rect key="frame" x="312" y="295" width="42" height="21"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoBack" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-JD-BEC">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-m1-EM3">
-                                <rect key="frame" x="0.0" y="64" width="667" height="223"/>
+                            </imageView>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-m1-EM3">
+                                <rect key="frame" x="0.0" y="64" width="667" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.52549019607843139" blue="0.12941176470588234" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gDd-hv-N2f">
-                                    <size key="itemSize" width="161" height="219"/>
+                                    <size key="itemSize" width="178" height="211"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Ew6-S8-f79" customClass="CardCollectionViewCell" customModule="VeetoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2" width="161" height="219"/>
+                                        <rect key="frame" x="0.0" y="16.5" width="178" height="211"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="161" height="219"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="211"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosaBranco" translatesAutoresizingMaskIntoConstraints="NO" id="ghz-W6-k9Q">
+                                                    <rect key="frame" x="7" y="-1" width="171" height="211"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-TZ-1Jh">
-                                                    <rect key="frame" x="20" y="52" width="121" height="21"/>
+                                                    <rect key="frame" x="29" y="57" width="121" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
                                                     <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoD-bg-g76">
-                                                    <rect key="frame" x="20" y="88" width="121" height="21"/>
+                                                    <rect key="frame" x="29" y="84" width="121" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
                                                     <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-d6-Cu0">
-                                                    <rect key="frame" x="20" y="122" width="121" height="21"/>
+                                                    <rect key="frame" x="29" y="114" width="121" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
                                                     <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUN-53-g6J">
-                                                    <rect key="frame" x="20" y="157" width="121" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
-                                                    <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-R0-h2e">
-                                                    <rect key="frame" x="20" y="190" width="121" height="21"/>
+                                                    <rect key="frame" x="29" y="144" width="121" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
                                                     <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWU-lU-8ps">
-                                                    <rect key="frame" x="20" y="14" width="121" height="21"/>
+                                                    <rect key="frame" x="29" y="10" width="121" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="29"/>
                                                     <color key="textColor" red="0.96231872529999996" green="0.9718466335" blue="0.9718466335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-R0-h2e">
+                                                    <rect key="frame" x="29" y="174" width="121" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="17"/>
+                                                    <color key="textColor" red="0.96036416290000004" green="0.97265678639999997" blue="0.97257059810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="backgroundImage" destination="ghz-W6-k9Q" id="8I2-6X-Smm"/>
                                             <outlet property="fifthWord" destination="jbQ-R0-h2e" id="eVV-aK-3ip"/>
                                             <outlet property="firstWord" destination="dTc-TZ-1Jh" id="rHR-6H-PS0"/>
                                             <outlet property="fourthWord" destination="nUN-53-g6J" id="qln-9R-E7n"/>
@@ -332,19 +381,45 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAX-Bl-hZ3">
+                                <rect key="frame" x="126" y="310" width="180" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="32"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="1" green="0.52549019610000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPlayAgain:" destination="7yd-Kn-jCf" eventType="touchUpInside" id="rz3-Up-rfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-Zc-Wcb">
+                                <rect key="frame" x="358" y="310" width="180" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="32"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="1" green="0.52549019610000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapMenu:" destination="7yd-Kn-jCf" eventType="touchUpInside" id="eqI-H2-tWe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct Cards: 120 x Wrtong cards: 120" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQe-Ul-4Jd">
+                                <rect key="frame" x="51" y="20" width="565" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Neon80s" family="Neon 80s" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.52549019610000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="yIK-av-Kr3">
-                        <barButtonItem key="rightBarButtonItem" title="Menu" id="IHc-XV-K7l">
-                            <connections>
-                                <action selector="didTapMenuButton:" destination="7yd-Kn-jCf" id="afi-5b-HQa"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="TIJ-m1-EM3" id="G4k-hz-rYa"/>
+                        <outlet property="finalResult" destination="mQe-Ul-4Jd" id="qLr-wW-hQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rar-L7-hrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,7 +428,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_purple" width="500" height="500"/>
+        <image name="circle_orange" width="500" height="500"/>
+        <image name="circle_purple" width="500" height="500"/>
+        <image name="rosaBranco" width="439" height="464"/>
         <image name="roxoBranco" width="439" height="464"/>
+        <image name="veetoBack" width="1136" height="640"/>
         <image name="veetoLogo" width="1047" height="236"/>
     </resources>
 </document>

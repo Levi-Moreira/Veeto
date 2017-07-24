@@ -13,13 +13,18 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
 	@IBOutlet weak var mainView: UIView!
 
+    @IBOutlet weak var timer: UILabel!
 
+    @IBOutlet weak var circleOrange: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true
+        
+        timer.isHidden = false
+        circleOrange.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,12 +34,18 @@ class ResultViewController: UIViewController {
     
 
     func didGamePass(){
+        timer.isHidden = true
+        circleOrange.isHidden = true
+        
         statusLabel.text = "Pass"
-		mainView.backgroundColor = UIColor(rgb : 0xb30000)
+		mainView.backgroundColor = UIColor(rgb : 0xDB0E0E)
 
     }
     
     func didGameWin(){
+        timer.isHidden = true
+        circleOrange.isHidden = true
+        
 		mainView.backgroundColor = UIColor(rgb : 0x489F00)
         statusLabel.text = "Correct"
 
@@ -43,6 +54,10 @@ class ResultViewController: UIViewController {
     func didGameWait(msg: String) {
         mainView.backgroundColor = UIColor(rgb : 0xFF8621)
         statusLabel.text = msg
+    }
+    
+    func setTime(time : Int){
+        timer.text = "\(time)"
     }
 
 }

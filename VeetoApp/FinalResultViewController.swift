@@ -13,6 +13,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
 	
+    @IBOutlet weak var finalResult: UILabel!
 	var player: AVAudioPlayer?
 	var endSound: AVAudioPlayer?
 	
@@ -29,12 +30,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         
         collectionView.dataSource = self
         collectionView.delegate = self
-			
-		
-//			print(words)
-        
-			
-        
+
             // Sound end
 			
 			if(preferences.bool(forKey: soundSettings)){
@@ -54,6 +50,12 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 		player = self.endSound
 		endSound?.prepareToPlay()
 		endSound?.play()
+        
+        let correctCards = CardProvider.sharedInstance.correctCards.count
+        let wrongCards = CardProvider.sharedInstance.wrongCards.count
+        let finalResultString = "Correct Cards: \(correctCards) x Wrong Cards: \(wrongCards)"
+        
+        finalResult.text = finalResultString
 	}
 
     override func didReceiveMemoryWarning() {
@@ -92,11 +94,13 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         
         
         if(CardProvider.sharedInstance.wrongCards.contains(Int(words[indexPath.row].id!)) ){
-            cell.backgroundColor = UIColor(rgb : 0xb30000)
+//            cell.backgroundColor = UIColor(rgb : 0xb30000)
+            cell.backgroundImage.image = UIImage(named: "rosaBranco")
         }
         
         if(CardProvider.sharedInstance.correctCards.contains(Int(words[indexPath.row].id!)) ){
-            cell.backgroundColor = UIColor(rgb : 0x489F00)
+//            cell.backgroundColor = UIColor(rgb : 0x489F00)
+            cell.backgroundImage.image = UIImage(named: "azulBranco")
         }
 
         
@@ -107,5 +111,13 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         
     }
     
+ 
+    @IBAction func didTapPlayAgain(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func didTapMenu(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     
 }

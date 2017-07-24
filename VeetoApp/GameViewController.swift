@@ -26,7 +26,25 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var fifthWord: UILabel!
     
+    @IBOutlet weak var timer: UILabel!
    
+    @IBOutlet weak var mainCard: UIImageView!
+    
+    @IBOutlet weak var bolImage: UIImageView!
+    
+    
+    @IBOutlet weak var backImage: UIButton!
+    
+    
+    let cardImages: [String] = ["azulBranco", "rosaBranco", "roxoBranco", "amareloBranco"]
+    
+    
+    let bolImages: [String] = ["circle_green", "circle_pink", "circle_purple", "circle_yellow"]
+    
+    let backImages: [String] = ["back_green", "back_pink", "back_purple", "back_yellow"]
+    
+    var indexCard = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -41,7 +59,9 @@ class GameViewController: UIViewController {
     }
     
 	func loadCard(card : Card){
-		
+		mainCard.image = UIImage(named: cardImages[indexCard])
+        bolImage.image = UIImage(named: bolImages[indexCard])
+        backImage.setImage(UIImage(named: backImages[indexCard]), for: .normal)
         mainWord.text = card.mainWord
         firstWord.text = card.firstWord
         secondWord.text = card.secondWord
@@ -49,13 +69,26 @@ class GameViewController: UIViewController {
         fourthWord.text = card.fourthWord
         fifthWord.text = card.fifthWord
         
+        indexCard += 1
+        
+        if (indexCard == 4) {
+            indexCard = 0
+        }
+        
     }
     
     
     func didChangeCard() {
         loadCard(card: CardProvider.sharedInstance.provideCard())
     }
+    
+    func setTime(time : Int){
+        timer.text = "\(time)s"
+    }
 	
+    @IBAction func didTabBack(_ sender: UIButton) {
+            self.navigationController?.popViewController(animated: true)
+    }
 	
     
 }

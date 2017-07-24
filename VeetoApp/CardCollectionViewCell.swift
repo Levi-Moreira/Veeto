@@ -23,5 +23,6 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var fifthWord: UILabel!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
   
 }

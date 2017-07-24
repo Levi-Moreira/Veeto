@@ -19,6 +19,7 @@ class SingleModeViewController: UIViewController {
     
     @IBOutlet weak var GameView: UIView!
     
+
     /* View controllers for the result (pass and correct) and game screens*/
     
     weak var resultViewController: ResultViewController?
@@ -56,6 +57,7 @@ class SingleModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        timer.hidesBackButton = true
 		if(preferences.bool(forKey: soundSettings)){
 			// Sound Start
 			let pathStart = Bundle.main.path(forResource: "start", ofType: "mp3")!
@@ -118,7 +120,7 @@ class SingleModeViewController: UIViewController {
             gameCounter = 60
         }
 		
-		//gameCounter = 15
+		gameCounter = 15
 		
 		
 
@@ -135,7 +137,8 @@ class SingleModeViewController: UIViewController {
         resultViewController?.didGameWait(msg: "Prepare")
         GameView.isHidden = true
         ResultView.isHidden = false
-        timer.title = String(startGameCounter)+"s"
+        timer.title = " "
+        resultViewController?.setTime(time: startGameCounter)
     }
     
     
@@ -245,13 +248,13 @@ class SingleModeViewController: UIViewController {
             gameCounter = gameCounter - 1
             
             if (gameCounter == 0) {
-                self.timer.title = String("Voltar")
+                self.timer.title = String(" ")
                 self.time.invalidate()
                 self.performSegue(withIdentifier: "finalResultSegue", sender: nil)
             }
             else {
-                timer.title = String(gameCounter)+"s"
-                
+                timer.title = " "
+                gameViewController?.setTime(time: gameCounter)
                 // Sound Tic Tac
                 if(gameCounter == 10) {
                     player = self.tictacSound
@@ -272,7 +275,8 @@ class SingleModeViewController: UIViewController {
         
             GameView.isHidden = true
             ResultView.isHidden = false
-            timer.title = String(startGameCounter)+"s"
+            timer.title = " "
+            resultViewController?.setTime(time: startGameCounter)
         }
 	}
     

@@ -85,6 +85,19 @@ class GameViewController: UIViewController {
     func setTime(time : Int){
         timer.text = "\(time)s"
     }
+    @IBAction func animateBack(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        sender.transform = .identity
+            },
+                       completion: nil)
+    }
 	
     @IBAction func didTabBack(_ sender: UIButton) {
             self.navigationController?.popViewController(animated: true)

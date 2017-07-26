@@ -20,6 +20,14 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 	let preferences = UserDefaults.standard
 	
 	let soundSettings = "soundSettings"
+    
+    let strokeTextAttributes = [
+        NSStrokeColorAttributeName : UIColor.black,
+        NSForegroundColorAttributeName : UIColor.white,
+        NSStrokeWidthAttributeName : -4.0,
+        NSFontAttributeName : UIFont(name: "Neon 80s", size: 32.0)
+        ] as [String : Any]
+    
 	
     var words  = CardProvider.sharedInstance.retrievePlayedCards()
    
@@ -55,7 +63,8 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         let wrongCards = CardProvider.sharedInstance.wrongCards.count
         let finalResultString = "Correct Cards: \(correctCards) x Wrong Cards: \(wrongCards)"
         
-        finalResult.text = finalResultString
+         finalResult.attributedText = NSMutableAttributedString(string: finalResultString, attributes: strokeTextAttributes)
+//        finalResult.text = finalResultString
 	}
 
     override func didReceiveMemoryWarning() {
@@ -118,6 +127,34 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
     
     @IBAction func didTapMenu(_ sender: UIButton) {
         self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func animateRestart(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        sender.transform = .identity
+            },
+                       completion: nil)
+    }
+    
+    @IBAction func animateMenu(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        sender.transform = .identity
+            },
+                       completion: nil)
     }
     
 }

@@ -120,7 +120,7 @@ class SingleModeViewController: UIViewController {
             gameCounter = 60
         }
 		
-		gameCounter = 15
+//		gameCounter = 15
 		
 		
 

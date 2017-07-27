@@ -179,7 +179,7 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         
         alertView.showTitle(
             "Info", // Title of view
-            subTitle: "The songs of this game have public domain under copyright law. The credits is of https://www.freesfx.co.uk and https://freesound.org. The icons of this game have public domain under copyright law. The credits is of https://icons8.com.", // String of view
+            subTitle: "The songs in this game have public domain under copyright law. The credits is of https://www.freesfx.co.uk and https://freesound.org. The icons in this game have public domain under copyright law. The credits is of https://icons8.com.", // String of view
             duration: 0.0, // Duration to show before closing automatically, default: 0.0
             completeText: "Done", // Optional button value, default: ""
             style: .success, // Styles - see below.

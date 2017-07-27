@@ -17,21 +17,17 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
     let soundSettings = "soundSettings"
     let timeSettings = "timeSettings"
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true
-        
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {
          animateLogo()
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -59,7 +55,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
 
     @IBAction func didTapSettings(_ sender: UIButton) {
         
-        
         let appearance = SCLAlertView.SCLAppearance(
            
             kTitleFont: UIFont(name: "Neon 80s", size: 26)!,
@@ -72,7 +67,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         
         
         let subview = UIView(frame: CGRect(x: 0, y: 0,width: 500,height: 550))
-        
         
         let strokeTextAttributes = [
             NSForegroundColorAttributeName : UIColor.black,
@@ -89,7 +83,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         let switchView = UISwitch(frame: CGRect(x: 130, y: 15, width: 0, height: 25))
         
         switchView.onTintColor = UIColor(rgb: 0xba61ff)
-    
     
         switchView.addTarget(self, action: #selector(didChangeSoundSettings), for: .valueChanged)
         
@@ -173,6 +166,28 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
                         sender.transform = .identity
             },
                        completion: nil)
+        
+        let alertViewIcon = UIImage(named: "info")
+        let appearance = SCLAlertView.SCLAppearance(
+            
+            kTitleFont: UIFont(name: "Neon 80s", size: 20)!,
+            kTextFont: UIFont(name: "Neon 80s", size: 10)!,
+            kButtonFont: UIFont(name: "Neon 80s", size: 10)!,
+            showCircularIcon: true
+        )
+        let alertView = SCLAlertView(appearance: appearance)
+        
+        alertView.showTitle(
+            "Info", // Title of view
+            subTitle: "The songs of this game have public domain under copyright law. The credits is of https://www.freesfx.co.uk and https://freesound.org. The icons of this game have public domain under copyright law. The credits is of https://icons8.com.", // String of view
+            duration: 0.0, // Duration to show before closing automatically, default: 0.0
+            completeText: "Done", // Optional button value, default: ""
+            style: .success, // Styles - see below.
+            colorStyle: 0xFF8621,
+            colorTextButton: 0xFFFFFF,
+            circleIconImage: alertViewIcon
+        )
+        
 
     }
     

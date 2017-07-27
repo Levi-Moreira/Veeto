@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -44,13 +46,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoBack" translatesAutoresizingMaskIntoConstraints="NO" id="9XR-Ad-6hA">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veetoBack" translatesAutoresizingMaskIntoConstraints="NO" id="9XR-Ad-6hA">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9XR-Ad-6hA" secondAttribute="height" multiplier="667:375" id="fWR-GP-tKC"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-2z-2Ee">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-2z-2Ee">
                                 <rect key="frame" x="173" y="178" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="DOk-ew-KtW"/>
+                                    <constraint firstAttribute="width" secondItem="MRi-2z-2Ee" secondAttribute="height" multiplier="1:1" id="YNu-nP-fF8"/>
+                                    <constraint firstAttribute="width" secondItem="MRi-2z-2Ee" secondAttribute="height" multiplier="1:1" id="ciZ-8j-emB"/>
+                                    <constraint firstAttribute="height" constant="130" id="iiZ-lI-fJL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" image="play">
                                     <color key="titleColor" red="0.90980392160000001" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,8 +70,28 @@
                                     <segue destination="YNe-rr-zWL" kind="show" id="2Dy-gq-h9q"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veetoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-KY-ATt">
+                                <rect key="frame" x="113" y="57" width="440" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I7x-KY-ATt" secondAttribute="height" multiplier="110:23" id="5cN-c8-CUw"/>
+                                    <constraint firstAttribute="width" secondItem="I7x-KY-ATt" secondAttribute="height" multiplier="110:23" id="AdG-m7-O9g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18h-dv-gev">
+                                <rect key="frame" x="593" y="309" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="18h-dv-gev" secondAttribute="height" multiplier="1:1" id="7gB-zQ-61U"/>
+                                    <constraint firstAttribute="height" constant="50" id="UgA-0T-EUW"/>
+                                    <constraint firstAttribute="width" constant="50" id="oHS-pP-1hN"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Button" image="info"/>
+                                <connections>
+                                    <action selector="animateInfo:" destination="zBg-S4-FOT" eventType="touchDown" id="wgA-vP-MAy"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GwK-IO-dHV">
-                                <rect key="frame" x="384" y="178" width="140" height="140"/>
+                                <rect key="frame" x="380" y="178" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
@@ -75,20 +104,21 @@
                                     <action selector="didTapSettings:" destination="zBg-S4-FOT" eventType="touchUpInside" id="HHM-uf-UzH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veetoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-KY-ATt">
-                                <rect key="frame" x="113" y="57" width="440" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18h-dv-gev">
-                                <rect key="frame" x="608" y="317" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="info"/>
-                                <connections>
-                                    <action selector="animateInfo:" destination="zBg-S4-FOT" eventType="touchDown" id="wgA-vP-MAy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bWb-M1-4Ah" firstAttribute="top" secondItem="MRi-2z-2Ee" secondAttribute="bottom" constant="67" id="E97-gY-TI3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="18h-dv-gev" secondAttribute="trailing" constant="4" id="EDV-16-79x"/>
+                            <constraint firstItem="9XR-Ad-6hA" firstAttribute="leading" secondItem="zn7-dT-run" secondAttribute="leading" id="EkU-cK-nn4"/>
+                            <constraint firstItem="I7x-KY-ATt" firstAttribute="leading" secondItem="zn7-dT-run" secondAttribute="leadingMargin" constant="93" id="Kmb-VQ-99X"/>
+                            <constraint firstAttribute="trailing" secondItem="9XR-Ad-6hA" secondAttribute="trailing" id="Lnv-X4-Qkk"/>
+                            <constraint firstItem="bWb-M1-4Ah" firstAttribute="top" secondItem="18h-dv-gev" secondAttribute="bottom" constant="16" id="Us0-Kn-fIv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I7x-KY-ATt" secondAttribute="trailing" constant="94" id="Wu8-fA-wTA"/>
+                            <constraint firstItem="MRi-2z-2Ee" firstAttribute="leading" secondItem="zn7-dT-run" secondAttribute="leadingMargin" constant="153" id="YJO-wc-gjj"/>
+                            <constraint firstItem="bWb-M1-4Ah" firstAttribute="top" secondItem="9XR-Ad-6hA" secondAttribute="bottom" id="cm1-yx-4mH"/>
+                            <constraint firstItem="9XR-Ad-6hA" firstAttribute="top" secondItem="zn7-dT-run" secondAttribute="top" id="dPN-gb-n8h"/>
+                            <constraint firstItem="I7x-KY-ATt" firstAttribute="top" secondItem="zn7-dT-run" secondAttribute="topMargin" constant="57" id="rxY-yh-ufH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dM8-XT-Xff"/>
                     <connections>

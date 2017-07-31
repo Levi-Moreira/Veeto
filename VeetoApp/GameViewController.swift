@@ -12,18 +12,12 @@ class GameViewController: UIViewController {
     
 //    var words  = [Int : Card](
     
-    
-    
     @IBOutlet weak var mainWord: UILabel!
     
     @IBOutlet weak var firstWord: UILabel!
-
     @IBOutlet weak var secondWord: UILabel!
-    
     @IBOutlet weak var thirdWord: UILabel!
-    
     @IBOutlet weak var fourthWord: UILabel!
-    
     @IBOutlet weak var fifthWord: UILabel!
     
     @IBOutlet weak var timer: UILabel!
@@ -32,15 +26,11 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var bolImage: UIImageView!
     
-    
     @IBOutlet weak var backImage: UIButton!
     
     
     let cardImages: [String] = ["azulBranco", "rosaBranco", "roxoBranco", "amareloBranco"]
-    
-    
     let bolImages: [String] = ["circle_green", "circle_pink", "circle_purple", "circle_yellow"]
-    
     let backImages: [String] = ["back_green", "back_pink", "back_purple", "back_yellow"]
     
     var indexCard = 0
@@ -74,9 +64,7 @@ class GameViewController: UIViewController {
         if (indexCard == 4) {
             indexCard = 0
         }
-        
     }
-    
     
     func didChangeCard() {
         loadCard(card: CardProvider.sharedInstance.provideCard())
@@ -85,6 +73,7 @@ class GameViewController: UIViewController {
     func setTime(time : Int){
         timer.text = "\(time)s"
     }
+    
     @IBAction func animateBack(_ sender: UIButton) {
         sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
@@ -94,15 +83,14 @@ class GameViewController: UIViewController {
                        initialSpringVelocity: 6.0,
                        options: .allowUserInteraction,
                        animations: { [weak self] in
-                        sender.transform = .identity
+                       sender.transform = .identity
             },
                        completion: nil)
     }
 	
     @IBAction func didTabBack(_ sender: UIButton) {
-            self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
-	
-    
+
 }
 

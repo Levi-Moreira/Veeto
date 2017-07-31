@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "veetoLogo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "veetoLogo.png",
       "scale" : "2x"
     },
     {

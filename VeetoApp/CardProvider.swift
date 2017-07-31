@@ -11,18 +11,12 @@ import Foundation
 class CardProvider {
 	
 	private var words = [Int : Card]()
-	
-	 public var playedCardsId = [Int]()
-	
+	public var playedCardsId = [Int]()
 	private let cardsNumber = 100
-	
-	 public var correctCards = [Int]()
-	
-	 public var wrongCards = [Int]()
-	
+	public var correctCards = [Int]()
+	public var wrongCards = [Int]()
 	private var currentCard : Card?
-	
-	
+		
 	static let sharedInstance: CardProvider = {
 		let instance = CardProvider()
 		return instance
@@ -31,7 +25,6 @@ class CardProvider {
 	init() {
 		words = JsonHelper().readJson()
 	}
-	
 	
 	func restoreProvider(){
 		correctCards.removeAll()
@@ -42,9 +35,9 @@ class CardProvider {
 	func provideCard() -> Card{
 		var randomNum : UInt32 = arc4random_uniform(100) + 1 // range is 0 to 99
 		
-		if playedCardsId.count > 70{
-			playedCardsId.removeAll()
-		}
+//		if playedCardsId.count > 70{
+//			playedCardsId.removeAll()
+//		}
 		
 		while playedCardsId.contains(Int(randomNum)) {
 			randomNum = arc4random_uniform(100) + 1
@@ -80,7 +73,6 @@ class CardProvider {
 		}
 	}
 	
-	
 	func findCardBy(id : Int) ->Card{
 		return words[id]!
 	}
@@ -91,9 +83,8 @@ class CardProvider {
 		for id in playedCardsId{
 			cards.append(findCardBy(id: id))
 		}
-		
+        
 		return cards
 	}
-	
 	
 }

@@ -28,11 +28,8 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         NSFontAttributeName : UIFont(name: "Neon 80s", size: 32.0)
         ] as [String : Any]
     
-	
     var words  = CardProvider.sharedInstance.retrievePlayedCards()
    
-
-    
         override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,9 +47,7 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 					print("Error of End")
 				}
 			}
-
     }
-	
 	
 	override func viewWillAppear(_ animated: Bool) {
 		player = self.endSound
@@ -80,16 +75,13 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
         self.navigationController?.popToRootViewController(animated: true)
     }
 
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (words.count)
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CardCollectionViewCell
@@ -111,16 +103,10 @@ class FinalResultViewController: UIViewController, UICollectionViewDelegate, UIC
 //            cell.backgroundColor = UIColor(rgb : 0x489F00)
             cell.backgroundImage.image = UIImage(named: "azulBranco")
         }
-
-        
-
-
-        
+ 
         return cell
-        
     }
     
- 
     @IBAction func didTapPlayAgain(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }

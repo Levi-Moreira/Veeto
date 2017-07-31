@@ -23,6 +23,10 @@ class ResultViewController: UIViewController {
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         timer.isHidden = false
         circleOrange.isHidden = false
     }

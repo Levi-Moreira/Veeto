@@ -27,11 +27,9 @@ class JsonHelper {
 					return dicCards
 					//print(dicCards)
 				}
-				
-				
+							
 				//let cards = Dictionary<String, Card>()
-				
-				
+							
 			} else {
 				print("no file")
 			}
@@ -43,10 +41,6 @@ class JsonHelper {
 		return [Int : Card]()
 	}
 }
-
-
-
-
 
 extension Dictionary {
 	public init(keyValuePairs: [(Key, Value)]) {

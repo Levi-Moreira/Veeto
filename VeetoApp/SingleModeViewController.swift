@@ -14,30 +14,21 @@ class SingleModeViewController: UIViewController {
 
     /* OUtlests for controlling the UI*/
     @IBOutlet var ResultView: UIView!
-
 	@IBOutlet weak var timer: UINavigationItem!
-    
     @IBOutlet weak var GameView: UIView!
     
-
     /* View controllers for the result (pass and correct) and game screens*/
     
     weak var resultViewController: ResultViewController?
-
     weak var gameViewController : GameViewController?
     
     let preferences = UserDefaults.standard
-    
     let soundSettings = "soundSettings"
     let timeSettings = "timeSettings"
     
-    
     /*Start up CoreMotion manager*/
     var motionManager = CMMotionManager()
-	
 	var time = Timer()
-    
-    
     var gameCounter = 30
     var startGameCounter = 3
     
@@ -51,8 +42,7 @@ class SingleModeViewController: UIViewController {
     var passSound: AVAudioPlayer?
     var tictacSound: AVAudioPlayer?
 	
-	 var queue = OperationQueue()
-    
+    var queue = OperationQueue()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,15 +90,11 @@ class SingleModeViewController: UIViewController {
 		self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 		self.navigationController?.navigationBar.shadowImage = UIImage()
 		self.navigationController?.navigationBar.isTranslucent = true
-
     }
-	
-	
+		
     override func viewWillAppear(_ animated: Bool) {
         CardProvider.sharedInstance.restoreProvider()
         //set up game time
-
-        
         switch preferences.integer(forKey: timeSettings) {
         case 0:
             gameCounter = 60
@@ -120,11 +106,8 @@ class SingleModeViewController: UIViewController {
             gameCounter = 60
         }
 		
-//		gameCounter = 15
-		
-		
-
-        
+//		gameCounter = 5
+    
         //3 seconds for the game to start
         startGameCounter = 3
         
@@ -133,14 +116,12 @@ class SingleModeViewController: UIViewController {
         
         startTimer()
         
-        
         resultViewController?.didGameWait(msg: "Prepare")
         GameView.isHidden = true
         ResultView.isHidden = false
         timer.title = " "
         resultViewController?.setTime(time: startGameCounter)
     }
-    
     
     override func viewWillDisappear(_ animated: Bool) {
         motionManager.stopDeviceMotionUpdates()
@@ -151,16 +132,12 @@ class SingleModeViewController: UIViewController {
 		time.invalidate()
 		self.queue.cancelAllOperations()
         self.player = nil
-		
-		
     }
 
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     /*starts and configure gyroscope for detecting foward tilt and backward tilt*/
     func startGyro() {
@@ -191,9 +168,6 @@ class SingleModeViewController: UIViewController {
 							self?.correctSound?.play()
                             self?.gameViewController?.didChangeCard()
                             didEnterCorrect = true
-							
-							
-							
                         }
                         
                         if(angle < 60 && !didEnterPass){
@@ -209,7 +183,6 @@ class SingleModeViewController: UIViewController {
                             self?.gameViewController?.didChangeCard()
                             
                             didEnterPass = true
-
                         }
                         
                         if(angle > 60 && angle < 115){

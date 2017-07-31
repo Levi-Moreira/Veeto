@@ -50,21 +50,17 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
                         sender.transform = .identity
             },
                        completion: nil)
-
     }
 
     @IBAction func didTapSettings(_ sender: UIButton) {
-        
         let appearance = SCLAlertView.SCLAppearance(
-           
             kTitleFont: UIFont(name: "Neon 80s", size: 26)!,
             kTextFont: UIFont(name: "Neon 80s", size: 16)!,
             kButtonFont: UIFont(name: "Neon 80s", size: 16)!,
-             showCircularIcon: true
+            showCircularIcon: true
         )
         let alertView = SCLAlertView(appearance: appearance)
-        let alertViewIcon = UIImage(named: "settings") //Replace the IconImage text with the 
-        
+        let alertViewIcon = UIImage(named: "settings") //Replace the IconImage text with the
         
         let subview = UIView(frame: CGRect(x: 0, y: 0,width: 500,height: 550))
         
@@ -75,7 +71,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         
         let soundLabel = UILabel(frame: CGRect(x: 0,y: 15, width: 100,height: 25))
         
-        
         soundLabel.attributedText = NSMutableAttributedString(string: "Sound", attributes: strokeTextAttributes)
         soundLabel.textAlignment = NSTextAlignment.center
         subview.addSubview(soundLabel)
@@ -83,7 +78,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         let switchView = UISwitch(frame: CGRect(x: 130, y: 15, width: 0, height: 25))
         
         switchView.onTintColor = UIColor(rgb: 0xba61ff)
-    
         switchView.addTarget(self, action: #selector(didChangeSoundSettings), for: .valueChanged)
         
         if(preferences.bool(forKey: soundSettings)){
@@ -93,28 +87,20 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
         }
         
         subview.addSubview(switchView)
-        
         let timeLabel = UILabel(frame: CGRect(x: 0,y: 77, width: 100,height: 25))
         timeLabel.attributedText = NSMutableAttributedString(string: "Time", attributes: strokeTextAttributes)
         timeLabel.textAlignment = NSTextAlignment.center
         subview.addSubview(timeLabel)
         
-        
         let items = ["60", "90", "120"]
         let segmented = UISegmentedControl(items:items)
         segmented.frame = CGRect(x: 100,y: 72, width: 100,height: 30)
-        
         segmented.tintColor = UIColor(rgb: 0xba61ff)
-        
         segmented.addTarget(self, action: #selector(didChangeTimeSettings), for: .valueChanged)
-    
         segmented.selectedSegmentIndex = preferences.integer(forKey: timeSettings)
         
         subview.addSubview(segmented)
-        
-        
         alertView.customSubview = subview
-        
         
         alertView.showTitle(
             "Settings", // Title of view
@@ -126,18 +112,14 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
             colorTextButton: 0xFFFFFF,
             circleIconImage: alertViewIcon
         )
-    
     }
     
-    
     func didChangeSoundSettings(sender: UISwitch!){
-        
         if(sender.isOn){
             preferences.set(true, forKey: soundSettings)
         }else{
             preferences.set(false, forKey: soundSettings)
         }
-        
     }
     
     @IBAction func animatePlay(_ sender: UIButton) {
@@ -149,7 +131,7 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
                        initialSpringVelocity: 6.0,
                        options: .allowUserInteraction,
                        animations: { [weak self] in
-                        sender.transform = .identity
+                       sender.transform = .identity
             },
                        completion: nil)
     }
@@ -163,7 +145,7 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
                        initialSpringVelocity: 6.0,
                        options: .allowUserInteraction,
                        animations: { [weak self] in
-                        sender.transform = .identity
+                       sender.transform = .identity
             },
                        completion: nil)
         
@@ -187,8 +169,6 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
             colorTextButton: 0xFFFFFF,
             circleIconImage: alertViewIcon
         )
-        
-
     }
     
     func didChangeTimeSettings(sender: UISegmentedControl!){
@@ -204,11 +184,9 @@ class MenuViewController: UIViewController, UINavigationControllerDelegate {
                        initialSpringVelocity: 3.0,
                        options: .allowUserInteraction,
                        animations: { [weak self] in
-                        self.self?.veetoLogo.transform = .identity
+                       self.self?.veetoLogo.transform = .identity
             },
                        completion: nil)
-
-        
     }
 
 }
